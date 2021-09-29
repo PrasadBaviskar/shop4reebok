@@ -420,6 +420,7 @@ html,body {
  }
  #mainnav{
      background-color: black;
+     /* color: blue; */
  }
   #mainnav ul {
       list-style: none;
@@ -437,14 +438,14 @@ html,body {
       line-height: 100px;
   }
   #mainnav > ul > li.home > a {
-      color: #18ba60;
+      /* color: #18ba60; */
   }
   #mainnav > ul > li > a {
       position: relative;
       display: block;
       font-family: "Poppins", sans-serif;
       text-transform: uppercase;
-      color: #222;
+      color: #fff;
       text-decoration: none;
       font-size: 14px;
       margin: 0 15px;
