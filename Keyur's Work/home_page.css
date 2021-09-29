@@ -26,7 +26,11 @@
     
    
 }
-
+input{
+    width: 20%;
+    height: 20px;
+    margin-top: 20px;
+}
 #nav_div > h2{
    margin: 20px;
    color: white;
