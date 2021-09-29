@@ -507,4 +507,7 @@ html,body {
      font-size: 15px;
      
   }
+  input{
+      width: 75%;
+  }
   
