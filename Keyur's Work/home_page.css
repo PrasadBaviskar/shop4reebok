@@ -281,7 +281,7 @@ html,body {
   }
   #promotionfooter{
       width: 100%;
-      background-color:yellowgreen;
+      background-color:gray;
      
   }
   #promotionfooter h1{
@@ -297,6 +297,12 @@ html,body {
   }
 #imgfooter{
     margin-left: 30%;
+}
+
+#footerll{
+    margin-left: 15%;
+    color: gray;
+    
 }
 
   @media only screen and (min-width: 1280px) {
