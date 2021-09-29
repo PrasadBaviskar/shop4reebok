@@ -23,7 +23,8 @@
 #nav_div{
     display: flex;
     background-color: black;
-
+    
+   
 }
 
 #nav_div > h2{
@@ -33,27 +34,29 @@
    
    
 }
+
+
+
+/* #input_container {
+    position:relative;
+    padding:0 0 0 20px;
+    margin:0 20px;
+    background:#ddd;
+   
+    width: 200px;
+} */
+
+
+
+
 #logo{
     width: 10%;
     height: 20px;
   margin-top: 2%;
 }
 
-#input_img {
-    position:absolute;
-    bottom:2px;
-    right:5px;
-    width:24px;
-    height:24px;
-}
-#inputSearch {
-    height:20px;
-    margin:0;
-    vertical-align: middle;
-    padding-right: 30px;
-    width: 15%;
-}
-#myslideshow img{
+
+slideshow img{
     width: 100%;
     height: 450px;
 }
