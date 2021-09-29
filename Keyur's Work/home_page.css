@@ -357,7 +357,7 @@ html,body {
 
 .footer1 {
     width: 100%;
-    position: relative;
+    /* position: relative; */
     height: auto;
     background-color: #fff;
   }
@@ -454,7 +454,7 @@ html,body {
   }
   #mainnav ul.submenu {
       position: absolute;
-      left: 0;
+      /* left: 0; */
       top: 150%;
       width: 1340px;
       text-align: left;
