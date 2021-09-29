@@ -1,7 +1,18 @@
 *{
     max-width: 1500px;
 }
+#nav_div_l_s{
+    display: flex;
+    background-color: black;
 
+}
+#nav_div_l_s > h2{
+    margin: 20px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    
+ }
 #nav_div{
     display: flex;
     background-color: black;
