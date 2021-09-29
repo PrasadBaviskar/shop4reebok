@@ -49,8 +49,9 @@
 #inputSearch {
     height:20px;
     margin:0;
+    vertical-align: middle;
     padding-right: 30px;
-    width: 100%;
+    width: 15%;
 }
 #myslideshow img{
     width: 100%;
