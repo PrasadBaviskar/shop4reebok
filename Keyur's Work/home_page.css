@@ -3,6 +3,7 @@
 }
 #nav_div_l_s{
     display: flex;
+    flex-direction: row-reverse;
     background-color: black;
 
 }
