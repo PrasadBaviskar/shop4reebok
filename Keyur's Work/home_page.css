@@ -7,9 +7,13 @@
     background-color: black;
 
 }
+
 #nav_div > h2{
-   margin: 25px;
+   margin: 20px;
    color: white;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+   
 }
 #logo{
     width: 10%;
@@ -32,7 +36,11 @@
      padding: 2%;
      width: 75%;
 }
-
+#cat_div p{
+    margin-left: 38%;
+    padding: 2%;
+    width: 75%;
+}
 div > p{
    margin-left: 50%;
 }
