@@ -12,9 +12,13 @@
    
     color: white;
     font-size: 20px;
+    margin: 2px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
     
+ }
+ #nav_div_l_s :nth-child(2){
+     margin-left: 35%;
  }
 #nav_div{
     display: flex;
@@ -60,7 +64,7 @@ div > p{
 }
 
 #discount_div{
-    background-color: rgb(223, 208, 208);
+    background-color: #eeeee4;
     width: 70%;
     height: 120%;
     margin-left: 20%;
@@ -72,7 +76,7 @@ div > p{
 }
 
 #div_trad{
-    background-color: rgb(223, 208, 208);
+    background-color: #eeeee4;
     width: 100%;
   
     margin-top: 2%;
@@ -172,7 +176,7 @@ border-radius: 40px;
 
   #footerdiv1{
       display: flex;
-      background-color: gray;
+      background-color: #333;
   }
   #footerdiv1 h2{
       font-size: 20px;
@@ -198,7 +202,7 @@ html,body {
     width: 100%;
     position: relative;
     height: auto;
-    background-color: #070617;
+    background-color: #37393a;
   }
   .footer .col {
     width: 190px;
