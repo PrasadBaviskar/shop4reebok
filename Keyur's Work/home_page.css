@@ -499,5 +499,7 @@ html,body {
       visibility: visible;
   }
 
-  
+  .col h3{
+     font-size: 15px;
+  }
   
