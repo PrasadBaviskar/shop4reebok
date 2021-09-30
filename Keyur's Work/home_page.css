@@ -513,4 +513,6 @@ html,body {
   #logoimg{
       width: 50%;
   }
-  
+  a{
+    text-decoration: none;
+  }
