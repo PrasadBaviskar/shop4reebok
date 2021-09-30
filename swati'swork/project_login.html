@@ -183,12 +183,9 @@ function signup(el){
    let arr=JSON.parse(localStorage.getItem("users"));
    arr.push(user);
    localStorage.setItem("users",JSON.stringify(arr));
-<<<<<<< HEAD
+
    window.location.href="C:\Users\Admin\Documents\GitHub\shop4reebok\Keyur's Work\home_page.html";
-=======
-//    window.location.href="home_page.html";
->>>>>>> d088d8b821f41a53bd2b9995af35e0bf6cf19a0f
-}
+
 
 }
 
@@ -207,19 +204,20 @@ function login(el)
     all_user.forEach(function(user) {
         if((Email===user.Email_1)&&(password===user.password_1))
         {
-<<<<<<< HEAD
+
            // alert("logged in successfully");
            window.location.href="C:\Users\Admin\Documents\GitHub\shop4reebok\Keyur's Work\home_page.html";
-=======
+
             //alert("logged in successfully");
              window.location.href="home_page.html";
         } else {
             alert("123")
->>>>>>> d088d8b821f41a53bd2b9995af35e0bf6cf19a0f
+
         }
         
     });
 
+}
 }
 </script>
     
