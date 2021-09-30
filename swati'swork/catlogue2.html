@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <style>
-    
-/* Navigition */
+    /* Navigition */
 
 .footer1 {
     position: fixed;
@@ -178,87 +176,62 @@
   a{
     text-decoration: none;
   }
-    #box {
-    display:flex;
-    flex-direction: row;
-    padding:0% 6% 0% 6%;
-    height: 700px;
-    margin:2% 10% 5% 1%;
+#catlogue{
+    margin:2% 2% 5% 2%;
+    height:600px;
+    display:grid;
+    grid-gap:5%;
     justify-content: center;
-    
-
-
-}
-#box>div{
-    flex-basis: 30%;
-    padding:2%;
-}
-#idk>input{
-    margin:1%;
-}
-#color{
-    color: grey;
-}
-
-/*#fb {
-    background-image:url("https://tse1.mm.bing.net/th?id=OIP.aYVbqEFb2M-SWsBh_LafIQHaHa&pid=Api&rs=1&c=1&qlt=95&w=112&h=112");
-    width:10%;
-    height:2%;
-    background-size: contain;
-}*/
-.line {
-    width:0%;
-    height:85%;
-    border:1px solid rgb(216, 213, 213);
-
-}
-#Email,#password{
-    padding: 2% 25% 2% 2%; 
-    margin-top: 10%;
-    width:60%;
-   
-     
-}
-#First_Name,#Last_Name,#Email_1,#password_1,#password_2{
-
- padding: 2% 25% 2% 2%; 
- margin-top: 5%;
- width:60%;
-}
-#b1{
-  padding: 2% 0% 0% 7%;
+    grid-template-columns: 22% 22% 22%;
+    width:90%;
 
 }
 
-.distance{
-    margin: 10% 0%;
+    img{
+     width:70%;
+    }
+#catlogue > div:hover{
+    border:3px solid rgb(248, 245, 245);
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+
 }
-
-.box1{
-    margin:10% 10% 10% 0%;
-
+div{
+    padding:5% 2%;
+    font-size:15px;
 }
 button{
-    background-color: rgb(199, 23, 31);
+     padding:5% 1% 5% 2%;
+    width:100%;
+    background-color: rgb(187, 26, 26);
     color:white;
-    border-radius: 10%;
-    padding:2% 8% 2% 2%;
-    font-size: 15px;
+    text-align: left;
+    font-size:15px;
+    margin-bottom: 0px;
+  /* background-image: url("https://tse3.mm.bing.net/th?id=OIP.8QW0H91k-I_0vic8ZDujLQHaHa&pid=Api&P=0&w=50&h=50");
+    border-radius:50%;
+    background-size: cover;*/
+
+}
+#btn1{
+    padding:0.5%;
+   width:5%;
+   font-size:10px;
+  
+}
+.btn2{
+    background-image: url("https://tse3.mm.bing.net/th?id=OIP.8QW0H91k-I_0vic8ZDujLQHaHa&pid=Api&P=0&w=50&h=50");
+    border-radius:50%;
+    background-size: cover;
+}
+button{
+    margin: 10px;
+}
+.btn3{
     
-}
-#box2{
-    margin:  8% 0% ;
-}
-hr{
-    height: 1px;
-    background-color: rgb(226, 226, 218);
-    border: none;
-}
-@media only screen and (min-width:360px){
-    #box>div{
-flex-direction: column;
-flex-wrap:wrap;
-    }
+    padding:0.5%;
+   width:5%;
+   font-size:10px;
+  
 }
 /* ................................ */
 
@@ -420,9 +393,7 @@ html,body {
     }
   }
 
-
 </style>
-    
 <body>
     <nav id="mainnav" class="mainnav">
    
@@ -874,63 +845,33 @@ html,body {
         <!-- /.menu -->
     </nav>
     
-    <h2 id="b1">SIGN IN </h2>
-    <div id="box">
-        <div>
-            <h4>REGISTERED MEMBERS </h4>
-            <p>If you've created an account with us, please enter your email address and password.</p>
-          
-            <form id="idk1" onsubmit="login(event)" action="">
-                 <input type= "text" id="Email" placeholder="Enter Your Email"/>
-                <input type= "text" id="password" placeholder="Enter Your Password"/>
-                <div class="box1">
-                    <button>Sign In &rtrif; </button>
-                 </div>
-                <hr/>
-                <div class="distance">Forgot your password?</div> 
-                <input type="radio" id="user" name="fav_language" value=""/>
-                <label for="html">Continue as a Guest User</label><br>
-             </form>
-             
-     </div>
-     <p class="line"></p> 
-      <div>
-            <h4> NEW CUSTOMERS</h4>
-             <p>If you don't have an account with us, or are just unsure then enter your information below.</p>
-             
-             <form id="idk" onsubmit="signup(event)" action="">
-             <input type= "text" id="First_Name" placeholder="First Name"/>
-             <input type= "text" id="Last_Name" placeholder="Last Name"/>
-              <input type= "text" id="Email_1" placeholder="Email"/>
-             <input type= "text" id="password_1" placeholder="Password">
-               <p id="color">Password should have at least a minimum of one letter, one number and is at least 8 characters long</p>
-                <input type= "text" id="password_2" placeholder="Re-type Password"/> 
-                
-                <div  id="box2">
-                <input type="radio" id="Gender" name="fav_language" value=""/>
-                <label for="html">Male</label>
-                <input type="radio" id="Gender_1" name="fav_language" value=""/>
-                <label for="html">Female</label><br>
-                </div>
-                <hr/>
-                <div class="box1">
-                    
-                    <button>Sign In &rtrif; </button>
-                    </div>
-                
-            </form>    
-     </div>
-     <p class="line"></p>
-         <div>
-              <h4>USE YOUR  SOCIAL NETWORK</h4>
-             <p> Sign in using your existing Facebook information</p>
-              <div id="fb">
-                
-    <a href="https://www.facebook.com/"><img src = "https://tse1.mm.bing.net/th?id=OIP.aYVbqEFb2M-SWsBh_LafIQHaHa&pid=Api&rs=1&c=1&qlt=40&w=60&h=60 " /> </a>
-              </div>
-          </div>
- </div>
- <!-- ............................... -->
+
+   <select id="Sort_By" onchange="sort1(this.value)">
+       <!-- <option value="sortnone">Sort By</option> -->
+       <option value="new Arrivals">New Arrivals</option>
+       <option value="populer"> Populer</option>
+       <option value="sortLH" >Sort low to High </option>
+       <option value="sortHL">Sort high to low </option>
+   </select>
+   <button class="btn3" onclick="show10()">10</button>
+   <button  class="btn3"onclick="show20()">20</button>
+   <button  class="btn3" onclick="show30()">30</button>
+   <!-- <button class="btn3" onclick="show40()">40</button> -->
+  
+   <!-- <button id="btn1" onclick="sort1()">submit</button> -->
+   <div style="display: flex;">
+<div style="width: 350px;">
+
+</div>
+  
+    <div id="catlogue"></div>
+</div>
+<!-- <button class="btn3" onclick="show10()">10</button>
+   <button  class="btn3"onclick="show20()">20</button>
+   <button  class="btn3" onclick="show30()">30</button>
+   <button class="btn3" onclick="show40()">40</button> -->
+   <i style="color: white;" class="bnt2" aria-hidden="true">  
+  <!-- ............................... -->
 
 
   <!-- FOOTER START -->
@@ -1040,83 +981,369 @@ html,body {
   <div id="promotionfooter">
     <h1>SIGN UP AND GET <span style="color: rgb(248, 88, 115);">  15% OFF</span> <button> SignUP  &rtrif;</button></h1>
     </div>
-    <img id="imgfooter" src="file:///C:/Users/Admin/Documents/GitHub/shop4reebok/Keyur's%20Work/images/payment1.jpg"/>
+    <img id="imgfooter" src="images/payment1.jpg"/>
   
-   <h2 id="footerll">©2021 SHOP4REEBOK.COM | POWERED BY : ADI SPORTS (INDIA) PVT. LTD. <img src="file:///C:/Users/Admin/Documents/GitHub/shop4reebok/Keyur's%20Work/images/adi.jpg"/></h2>
+   <h2 id="footerll">©2021 SHOP4REEBOK.COM | POWERED BY : ADI SPORTS (INDIA) PVT. LTD. <img src="images/adi.jpg"/></h2>
   </div>
-  <!-- END OF FOOTER -->
-
+  <!-- END OF FOOTER --> 
 </body>
 </html>
 <script>
-function signup(el){
-    el.preventDefault();
-
-    let idk=document.getElementById("idk");
-
-    let First_Name= idk.First_Name.value;
-   let Last_Name=idk.Last_Name.value;
-   let Email_1=idk.Email_1.value;
-   let password_1=idk.password_1.value;
-   let password_2=idk.password_2.value;
-   if(password_1===password_2){
-
-   if(localStorage.getItem("users")===null){
-    localStorage.setItem("users",JSON.stringify([]));
-   }
-
-   let user={
-    First_Name,
-    Last_Name,
-     Email_1,
-    password_1,
-    password_2,
-
-    
-   };
-   console.log("user",user);
-    
-   let arr=JSON.parse(localStorage.getItem("users"));
-   arr.push(user);
-   localStorage.setItem("users",JSON.stringify(arr));
-<<<<<<< HEAD
-   window.location.href="C:\Users\Admin\Documents\GitHub\shop4reebok\Keyur's Work\home_page.html";
-=======
-//    window.location.href="home_page.html";
->>>>>>> d088d8b821f41a53bd2b9995af35e0bf6cf19a0f
-}
-
-}
-
-
-function login(el)
+    let data = [
+    {
+name:"UNISEX REEBOK TRAINING FACE COVER - 3 PACK",
+img:"https://content.shop4reebok.com/static/Product-HE7075/reebok_HE7075_1.jpg.plp",
+price:"699.00 ",
+},
 {
-    el.preventDefault();
-    
-    let  idk=document.getElementById("idk1");
+name:"UNISEX REEBOK TRAINING FACE COVERS XS/S 3-PACK",
+img:"https://content.shop4reebok.com/static/Product-HA0434/reebok_HA0434_1.jpg.plp",
+price:"999.00 ",
+},
+{
+name:"UNISEX REEBOK TRAINING FACE COVER - 3 PACK",
+img:"https://content.shop4reebok.com/static/Product-HC4180/reebok_HC4180_1.jpg.plp",
+price:"999.00 ",
+},
+{
+name:"UNISEX REEBOK TRAINING FACE COVER - 3 PACK",
+img:"https://content.shop4reebok.com/static/Product-HB1284/reebok_rbk_HB1284_1.jpg.plp",
+price:"999.00 ",
+},
+{
+name:"KIDS-UNISEX REEBOK TRAINING JUNIOR MOTION BACKPACK",
+img:"https://content.shop4reebok.com/static/Product-DY0870/UNISEX_Training_BACKPACK_DY0870_1.jpg.plp",
+price:"880.00 ",
+},
+{
+name:"UNISEX-KIDS TRAINING U FOUNDATION BACKPACK",
+img:"https://content.shop4reebok.com/static/Product-FT1752/KIDS_TRAINING_BAGS_FT1752_1.jpg.plp",
+price:"999.00 ",
+},
+{
+name:"KIDS-BOYS REEBOK CLASSICS VERSA PUMP FURY SHOES",
+img:"https://content.shop4reebok.com/static/Product-FY9093/reebok_FY9093_1.jpg.plp",
+price:"1600.00 ",
+},
+{
+name:"MEN'S REEBOK CLASSICS GRAPHIC TRACK PANTS",
+img:"https://content.shop4reebok.com/static/Product-FT7184/reebok_FT7184_1.jpg.plp",
+price:"2499.00 ",
+},
+{
+name:"UNISEX REEBOK CLASSICS VECTOR TRACK PANTS",
+img:"https://content.shop4reebok.com/static/Product-GJ6014/adidas_GJ6014_1.jpg.plp",
+price:"2999.00 ",
+},
+{
+name:"MEN'S REEBOK TRAINING ESSENTIALS GR TEE",
+img:"https://content.shop4reebok.com/static/Product-GK9297/reebok_GK9297_1.jpg.plp",
+price:"779.00",
+},
+{
+name:"MEN'S REEBOK RUNNING ESSENTIALS RUN FAST TEE",
+img:"https://content.shop4reebok.com/static/Product-FU1337/reebok_FU1337_1.jpg.plp",
+price:"1199.00",
+},
+{
+name:"MEN'S REEBOK TRAINING ACTIVE BASIC GR TEE",
+img:"https://content.shop4reebok.com/static/Product-GK7866/reebok_GK7866_1.jpg.plp",
+price:"959.00 ",
+},
+{
+name:"WOMEN'S REEBOK TRAINING WORKOUT READY PP TIGHTS",
+img:"https://content.shop4reebok.com/static/Product-GL2842/adidas_GL2842_1.jpg.plp",
+price:"1199.00",
+},
+{
+name:"WOMEN'S REEBOK TRAINING FOUNDATION POLY TEE",
+img:"https://content.shop4reebok.com/static/Product-GQ8835/reebok_GQ8835_1.jpg.plp",
+price:"629.00 ",
+},
+{
+name:"WOMEN'S REEBOK TRAINING TEE JACKET",
+img:"https://content.shop4reebok.com/static/Product-FU1446/reebok_FU1446_1.jpg.plp",
+price:"719.00 ",
+},
+{
+name:"WOMEN'S REEBOK RUNNING ESSENTIALS SHORT SLEEVE TEE",
+img:"https://content.shop4reebok.com/static/Product-GT2338/reebok_GT2338_1.jpg.plp",
+price:"839.00",
+},
+{
+name:"WOMEN'S REEBOK TRAINING MEET YOU THERE TRACK PANTS",
+img:"https://content.shop4reebok.com/static/Product-FK6772/WOMEN_TRAINING_PANTS_FK6772_1.jpg.plp",
+price:"1499.00",
+},
+{
+name:"WOMEN'S REEBOK RUNNING RUN ESSENTIALS  PRINT LEGGINGS",
+img:"https://content.shop4reebok.com/static/Product-GL2296/reebok_GL2296_1.jpg.plp",
+price:"1859.00",
+},
+{
+name:"MEN'S REEBOK TRAINING BAS POLO TEE",
+img:"https://content.shop4reebok.com/static/Product-GK9171/reebok_GK9171_1.jpg.plp",
+price:"779.00",
+},
+{
+name:"MEN'S REEBOK TRAINING WORKOUT REEADY PANTS",
+img:"https://content.shop4reebok.com/static/Product-FP9120/reebok_FP9120_1.jpg.plp",
+price:"1079.00",
+},
+{
+name:"MEN'S REEBOK TRAINING MYT AOP JOGGERS",
+img:"https://content.shop4reebok.com/static/Product-FS8486/reebok_FS8486_1.jpg.plp",
+price:"1899.00",
+},
+{ 
+name:" MEN'S REEBOK RUNNING STRIDE RUNNER SHOES",
+img:"https://content.shop4reebok.com/static/Product-EX6056/reebok_EX6056_1.jpg.plp",
+price:"1139.00",
+},
+{
+name:"MEN'S REEBOK TRAINING REVOLUTION SHOES",
+img:"https://content.shop4reebok.com/static/Product-FW1880/reebok_FW1880_1.jpg.plp",
+price:"1040.00",
+},
+{
+name:"MEN'S REEBOK RUNNING VOYAGER 1.0 SHOES",
+img:"https://content.shop4reebok.com/static/Product-EX4329/reebok_EX4329_1.jpg.plp",
+price:"1379.00",
+},
+{
+name:"MEN'S RUNNING EMERGO RUNNER SHOES",
+img:"https://content.shop4reebok.com/static/Product-EX6049/reebok_EX6049_1.jpg.plp",
+price:"1679.00",
 
-    let Email=idk.Email.value;
-    let password=idk.password.value;
-    
-   
-    let all_user=JSON.parse(localStorage.getItem("users"));
-    all_user.forEach(function(user) {
-        if((Email===user.Email_1)&&(password===user.password_1))
+},
+{
+name:"MEN'S REEBOK RUNNING FUSION LUX SHOES",
+img:"https://content.shop4reebok.com/static/Product-EX4215/reebok_EX4215_1.jpg.plp",
+price:"1259.00",
+},
+{
+name:"MEN'S REEBOK WALKING MECCARICK SLIP-ON SHOES",
+img:"https://content.shop4reebok.com/static/Product-EW5250/adidas_EW5250_1.jpg.plp",
+price:"1120.00 ",
+},
+{
+name:"MEN'S REEBOK TRAINING REVOLUTION SHOES",
+img:"https://content.shop4reebok.com/static/Product-FW1882/reebok_FW1882_1.jpg.plp",
+price:"1040.00",
+},
+{
+name:"MEN'S REEBOK RUNNING DRUHAN SHOES",
+img:"https://content.shop4reebok.com/static/Product-EW5195/adidas_EW5195_1.jpg.plp",
+price:"1720.00",
+},
+{
+name:"UNISEX REEBOK RUNNING LITE PLUS 2.0 SHOES",
+img:"https://content.shop4reebok.com/static/Product-FU8727/adidas_FU8727_1.jpg.plp",
+price:"2999.00",
+},
+{
+name:"MEN'S REEBOK RUNNING EDGE IDENTITY SHOES",
+img:"https://content.shop4reebok.com/static/Product-EW4977/reebok_EW4977_1.jpg.plp",
+price:"1559.00",
+},
+{
+name:"MEN'S REEBOK RUNNING AIM RUNNER SHOES",
+img:"https://content.shop4reebok.com/static/Product-EX4106/reebok_EX4106_1.jpg.plp",
+price:"2759.00",
+},
+{
+name:"MEN'S REEBOK RUNNING SPLASHER SHOES",
+img:"https://content.shop4reebok.com/static/Product-EX4312/reebok_EX4312_1.jpg.plp",
+price:"2399.00",
+},
+{
+name:"MEN'S REEBOK CLASSICS JURASSIC PARK STOMPER SHOES",
+img:"https://content.shop4reebok.com/static/Product-GX5412/reebok_GX5412_1.jpg.plp",
+price:"15999.00 ",
+},
+{
+name:"UNISEX REEBOK RUNNING ZIG KINETICA II SHOES",
+img:"https://content.shop4reebok.com/static/Product-H02746/reebok_H02746_1.jpg.plp",
+price:"9999.00",
+},
+{
+name:"WOMEN'S REEBOK RUNNING AIM RUNNER SHOES",
+img:"https://content.shop4reebok.com/static/Product-FX9405/reebok_FX9405_1.jpg.plp",
+price:"2299.00",
+},
+{
+name:"WOMEN'S REEBOK RUNNING ZIG KINETICA II SHOES",
+img:"https://content.shop4reebok.com/static/Product-H05715/reebok_H05715_1.jpg.plp",
+price:"9999.00 ",
+},
+{
+name:"UNISEX REEBOK CLASSICS ZX FURY SHOES",
+img:"https://content.shop4reebok.com/static/Product-GZ6593/reebok_GZ6593_1.jpg.plp",
+price:"18999.00",
+},
+{
+name:"UNISEX REEBOK BILLIONAIRE INSTAPUMP FURY BOOST SHOES",
+img:"https://content.shop4reebok.com/static/Product-GZ5363/reebok_GZ5363_1.jpg.plp",
+price:"13999.00 ",
+},
+];
+
+    let parent=document.getElementById("catlogue");
+     
+    function showCatlogues(d){
+       
+        d.forEach(function(catlog)
         {
-<<<<<<< HEAD
-           // alert("logged in successfully");
-           window.location.href="C:\Users\Admin\Documents\GitHub\shop4reebok\Keyur's Work\home_page.html";
-=======
-            //alert("logged in successfully");
-             window.location.href="home_page.html";
-        } else {
-            alert("123")
->>>>>>> d088d8b821f41a53bd2b9995af35e0bf6cf19a0f
-        }
-        
-    });
+          let div=document.createElement('div');
+          let img=document.createElement("img");
+    
+
+          img.src=catlog.img;
+
+          let catlog_price=document.createElement("p");
+           catlog_price.textContent=catlog.price;
+
+           let catlog_name=document.createElement("p");
+           catlog_name.textContent=catlog.name;
+
+           let addtocart_btn=document.createElement("button");
+           
+           addtocart_btn.innerText="ADD TO CART"+" "+"🛒";
+
+           addtocart_btn.onclick=function()
+           {
+               addtoCart(catlog);
+           };
+
+           div.append(img,catlog_name,catlog_price,addtocart_btn);
+
+           parent.append(div);
+
+
+        });
+    }
+showCatlogues(data);
+
+
+if(localStorage.getItem("cart")===null)
+{
+    localStorage.setItem("cart",JSON.stringify([]));
+}
+function addtoCart(p)
+{
+    let catlogue_cart=JSON.parse(localStorage.getItem("cart"));
+    catlogue_cart.push(p);
+
+    localStorage.setItem("cart",JSON.stringify(catlogue_cart));
 
 }
-</script>
+    function sortLH()
+    {
+       
+        parent.innerHTML=null;
+        let arr=data.sort(function(a,b)
+        {
+         return a.price-b.price;
+        });
+        
+        showCatlogues(arr);   
+    }
+
+    function sortHL()
+    {
+        parent.innerHTML=null;
+        let arr=data.sort(function(a,b)
+        {
+         return b.price-a.price;
+        });
+        
+        showCatlogues(arr);    
+    }
+    function populer(){
+        parent.innerHTML=null;
+        var ar = []
+        for(var i = 0; i < data.length; i++){
+        var item = data.find((_, i, data) => Math.random() < 1 / (data.length - i));
+        ar.push(item)
+        }
+       
+    //   console.log(ar)
+    showCatlogues(ar);    
+        
+    }
+
     
-   
+    function sort1(){
+      var n=document.getElementById("Sort_By");
+      if(n.value == "populer"){
+           populer()
+      }
+     else  if(n.value=="sortLH")
+      {
+        sortLH();
+      }
+      else if(n.value=="sortHL")
+      {
+        sortHL();  
+      }
+    }
+     
+    function show10()
+    {
+        let show_10=[];
+        parent.innerHTML=null;
+        for(var i=0;i<10;i++)
+        {
+            show_10.push(data[i]);
+        }
+        showCatlogues(show_10);
+    }
+
+    function show20()
+    {
+        let show_20=[];
+        parent.innerHTML=null;
+        for(var i=0;i<20;i++)
+        {
+            show_20.push(data[i]);
+        }
+        showCatlogues(show_20);
+    }
+
+    function show30()
+    {
+        let show_30=[];
+        parent.innerHTML=null;
+        for(var i=0;i<data.length;i++)
+        {
+            if(i<30)
+            {
+            show_30.push(data[i]);
+            }
+            else
+            {
+                break;
+            }
+        }
+        showCatlogues(show_30);
+    }
+
+    // function show40()
+    // {
+    //     let show_40=[];
+    //     parent.innerHTML=null;
+    //     for(var i=0;i<data.length;i++)
+    //     {
+    //         if(i<40)
+    //         {
+    //         show_40.push(data[i]);
+    //         }
+    //         else
+    //         {
+    //             break;
+    //         }
+    //     }
+    //     showCatlogues(show_40);
+    // }
+    
+</script>
