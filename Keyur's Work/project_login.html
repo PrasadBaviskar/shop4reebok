@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    #box {
+    display:flex;
+    flex-direction: row;
+    padding:0% 6% 0% 6%;
+    height: 700px;
+    margin:2% 10% 5% 1%;
+    justify-content: center;
+    
+
+
+}
+#box>div{
+    flex-basis: 30%;
+    padding:2%;
+}
+#idk>input{
+    margin:1%;
+}
+#color{
+    color: grey;
+}
+
+/*#fb {
+    background-image:url("https://tse1.mm.bing.net/th?id=OIP.aYVbqEFb2M-SWsBh_LafIQHaHa&pid=Api&rs=1&c=1&qlt=95&w=112&h=112");
+    width:10%;
+    height:2%;
+    background-size: contain;
+}*/
+.line {
+    width:0%;
+    height:85%;
+    border:1px solid rgb(216, 213, 213);
+
+}
+#Email,#password{
+    padding: 2% 25% 2% 2%; 
+    margin-top: 10%;
+    width:60%;
+   
+     
+}
+#First_Name,#Last_Name,#Email_1,#password_1,#password_2{
+
+ padding: 2% 25% 2% 2%; 
+ margin-top: 5%;
+ width:60%;
+}
+#b1{
+  padding: 2% 0% 0% 7%;
+
+}
+
+.distance{
+    margin: 10% 0%;
+}
+
+.box1{
+    margin:10% 10% 10% 0%;
+
+}
+button{
+    background-color: rgb(199, 23, 31);
+    color:white;
+    border-radius: 10%;
+    padding:2% 8% 2% 2%;
+    font-size: 15px;
+    
+}
+#box2{
+    margin:  8% 0% ;
+}
+hr{
+    height: 1px;
+    background-color: rgb(226, 226, 218);
+    border: none;
+}
+@media only screen and (min-width:360px){
+    #box>div{
+flex-direction: column;
+flex-wrap:wrap;
+    }
+}
+
+</style>
+    
+<body>
+    <h2 id="b1">SIGN IN </h2>
+    <div id="box">
+        <div>
+            <h4>REGISTERED MEMBERS </h4>
+            <p>If you've created an account with us, please enter your email address and password.</p>
+          
+            <form id="idk1" onsubmit="login(event)" action="">
+                 <input type= "text" id="Email" placeholder="Enter Your Email"/>
+                <input type= "text" id="password" placeholder="Enter Your Password"/>
+                <div class="box1">
+                    <button>Sign In &rtrif; </button>
+                 </div>
+                <hr/>
+                <div class="distance">Forgot your password?</div> 
+                <input type="radio" id="user" name="fav_language" value=""/>
+                <label for="html">Continue as a Guest User</label><br>
+             </form>
+             
+     </div>
+     <p class="line"></p> 
+      <div>
+            <h4> NEW CUSTOMERS</h4>
+             <p>If you don't have an account with us, or are just unsure then enter your information below.</p>
+             
+             <form id="idk" onsubmit="signup(event)" action="">
+             <input type= "text" id="First_Name" placeholder="First Name"/>
+             <input type= "text" id="Last_Name" placeholder="Last Name"/>
+              <input type= "text" id="Email_1" placeholder="Email"/>
+             <input type= "text" id="password_1" placeholder="Password">
+               <p id="color">Password should have at least a minimum of one letter, one number and is at least 8 characters long</p>
+                <input type= "text" id="password_2" placeholder="Re-type Password"/> 
+                
+                <div  id="box2">
+                <input type="radio" id="Gender" name="fav_language" value=""/>
+                <label for="html">Male</label>
+                <input type="radio" id="Gender_1" name="fav_language" value=""/>
+                <label for="html">Female</label><br>
+                </div>
+                <hr/>
+                <div class="box1">
+                    
+                    <button>Sign In &rtrif; </button>
+                    </div>
+                
+            </form>    
+     </div>
+     <p class="line"></p>
+         <div>
+              <h4>USE YOUR  SOCIAL NETWORK</h4>
+             <p> Sign in using your existing Facebook information</p>
+              <div id="fb">
+                
+    <a href="https://www.facebook.com/"><img src = "https://tse1.mm.bing.net/th?id=OIP.aYVbqEFb2M-SWsBh_LafIQHaHa&pid=Api&rs=1&c=1&qlt=40&w=60&h=60 " /> </a>
+              </div>
+          </div>
+ </div>
+</body>
+</html>
+<script>
+function signup(el){
+    el.preventDefault();
+
+    let idk=document.getElementById("idk");
+
+    let First_Name= idk.First_Name.value;
+   let Last_Name=idk.Last_Name.value;
+   let Email_1=idk.Email_1.value;
+   let password_1=idk.password_1.value;
+   let password_2=idk.password_2.value;
+   if(password_1===password_2){
+
+   if(localStorage.getItem("users")===null){
+    localStorage.setItem("users",JSON.stringify([]));
+   }
+
+   let user={
+    First_Name,
+    Last_Name,
+     Email_1,
+    password_1,
+    password_2,
+
+    
+   };
+   console.log("user",user);
+    
+   let arr=JSON.parse(localStorage.getItem("users"));
+   arr.push(user);
+   localStorage.setItem("users",JSON.stringify(arr));
+   window.location.href="home_page.html";
+}
+
+}
+
+
+function login(el)
+{
+    el.preventDefault();
+    
+    let  idk=document.getElementById("idk1");
+
+    let Email=idk.Email.value;
+    let password=idk.password.value;
+    
+   
+    let all_user=JSON.parse(localStorage.getItem("users"));
+    all_user.forEach(function(user) {
+        if((Email===user.Email_1)&&(password===user.password_1))
+        {
+            alert("logged in successfully");
+            // window.location.href="C:\Users\Admin\Documents\GitHub\shop4reebok\Keyur's Work\home_page.html";
+        }
+        
+    });
+
+}
+</script>
+    
+   
