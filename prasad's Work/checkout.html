@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div id="nav">
+    <div class="low_opcity"> <p> 1 </p> &nbsp;&nbsp; Bag </div>
+    <div > <p> 2 </p> &nbsp;&nbsp; Delivery </div>
+    <div class="low_opcity"> <p> 3 </p> &nbsp;&nbsp; Payment </div>
+  </div>
+
+<div class="row main-sect">
+  <div class="col-75">
+    <div class="container">
+      <form action="" onsubmit="payment(event)">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <p>All field are required</p>
+            <hr/>
+            
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input required type="text" id="fname" name="firstname" placeholder="Please enter your full name..">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="Please Enter your email here..">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input required type="text" id="adr" name="address" placeholder="enter your full address here">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="your city..">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="enter your state here..">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input required type="text" id="zip" name="zip" placeholder="enter ZIP code">
+              </div>
+            </div>
+          </div>
+
+    
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <input type="submit" value="Continue to checkout" class="btn">
+      </form>
+    </div>
+  </div>
+
+
+  <div class="col-25">
+    <div>
+        <p class="bold-font primary-bg-clr"> Order Summary </p>
+        <hr id="summary-line">
+   </div>
+   <div class="summary">
+       <div class="rows">
+           <p class="col1">Merchandise Subtotal (Incl Item Discounts)</p>
+           <p  class="col2" id="total"> ₹ 0.00 </p>
+       </div>
+
+       <div class="rows">
+           <p>Order Discounts</p>
+           <p id="discount">-₹ 0.00 </p>
+       </div>
+
+       <div class="rows ">
+           <p> Total  </p>
+           <p id="sum"> ₹ 0.00 <small class="sm-text">(Inclusive of all taxes)</small></p> 
+       </div>
+
+   </div>
+    
+  </div>
+</div>
+
+</body>
+</html>
+
+
+</body>
+</html>
+
+<script>
+    var products = JSON.parse(localStorage.getItem("cart"));
+    
+
+    sum = 0;
+    products.forEach(function(p){
+        sum += Number(p.selling_price);
+    });
+
+    // document.getElementById("sum").textContent = ;
+    // let ar = sum_p.textContent.split(" ");
+    // // console.log(ar)
+    // ar[2] = sum;
+    // sum_p.textContent = ar.join(" ");
+
+    // sum1 = document.getElementById("total");
+    // let ar2 = sum1.textContent.split(" ");
+    // ar2[2] = sum;
+    // sum1.textContent = ar2.join(" ");
+
+    let disc_value = (sum / 100) * 30;
+    // let disc = document.getElementById("discount");
+    // let disc_amt = disc.textContent.split(" ");
+    // disc_amt[1] = disc_value;
+    // disc.textContent = disc_amt.join(" ")
+
+    let desk = JSON.parse(localStorage.getItem("checkout_desk"));
+      // console.log(desk["total"])   
+    document.getElementById("total").textContent = desk["total"];
+    document.getElementById("discount").textContent = desk["discount"];
+
+    let final_amt = document.getElementById("sum").textContent.split(" ");
+    final_amt[2] = sum-disc_value;
+
+    desk["final_amt"] = final_amt.join(" ");
+    
+    localStorage.setItem("checkout_desk",JSON.stringify(desk));
+
+    document.getElementById("sum").textContent = desk["final_amt"]
+
+    // document.getElementById("discount").textContent = desk["final_amt"];
+
+    // document.getElementById("sum").textContent = ;
+
+
+
+function payment(e){
+    e.preventDefault();
+    window.location.href = 'payment.html';
+}
+
+</script>
