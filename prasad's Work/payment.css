@@ -1,7 +1,3 @@
-body{
-    /* background-color: honeydew; */
-}
-
 #container{
     width: 55%;
     border: 1px solid #374ecc;
@@ -36,9 +32,6 @@ body{
     padding: 2%;
     width: 50%;
     margin: auto;
-}
-.normal_bg{
-    /* background-color: gainsboro; */
 }
 
 .active_bg{
