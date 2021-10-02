@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        
+*{
+    background-color: #fff;
+}
+        #des_price{
+            font-size: 30px;
+            margin-top: 25px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            width: 300px;
+            /* margin-left: -390px; */
+        }
+        
+        #des_name{
+            /* margin-left: -20px; */
+            font-size: 30px;
+          width: 450px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+       
+        #btn_cart_des{
+            width: 250px;
+            height: 50px;
+            background-color: hotpink;
+        }
+        #img1_des{
+            width: 100px;
+            margin-left:200px;
+            margin-top:-100px;
+            
+        }
+        #btn_fav_des{
+           
+           margin-left: 0px;
+           width: 50px;
+           height: 50px;
+        }
+
+
+
+        
+
+#zoom { 
+width: 250px; 
+float:left;
+z-index: 10;
+    -webkit-transition: all .3s ease-out; 
+    -moz-transition: all .3s ease-out; 
+    -o-transition: all .3s ease-out; 
+    transition: all .3s ease-out; 
+-webkit-backface-visibility: hidden;
+-webkit-perspective: 1000;
+}
+
+#zoom:hover { 
+    -moz-transform: scale(2);
+    -webkit-transform: scale(2);
+    -o-transform: scale(2);
+    transform: scale(2);
+    -ms-transform: scale(2);
+filter: 
+    progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand',
+    M11=2, M12=-0, M21=0, M22=2);
+  
+}
+
+.image { 
+margin: 0; 
+border: 0 }
+
+.left {
+width: 250px; 
+float:left;
+z-index: 10; 
+overflow: hidden;
+  
+}
+
+</style>
+
+    <body>
+        <div >
+        <div id="des" style="display: grid; grid-template-columns: 35% 35%; gap: 70px;">
+           
+        </div>
+        
+    </div>
+    
+    
+    
+</body>
+</html>
+<script>
+    let parent=document.getElementById("des");
+let catlogue_des=JSON.parse(localStorage.getItem("des_data"));
+var x = (catlogue_des[catlogue_des.length-1])
+console.log(x)
+
+//localStorage.setItem("des_data",JSON.stringify(catlogue_des));
+
+function showCatlogues(){
+   
+  
+     let div=document.createElement('div');
+     let div1=document.createElement('div');
+     div1.id = "div1_des"
+     div.id = "div_des"
+    
+    
+     let img=document.createElement("img");
+     let img01=document.createElement("img");
+
+    
+     img.src=x.img;
+     img.style.width = "500px"
+     img.class = "image"
+     img.id = "zoom"
+     img01.id = "img01_des"
+
+     let img1=document.createElement("img");
+     img1.src=x.img;
+     img1.id = "img1_des"
+
+     let catlog_price=document.createElement("p");
+     catlog_price.id = "des_price"  
+     catlog_price.textContent= "Price: "+ x.price;
+      let catlog_price1=document.createElement("p");
+      
+      catlog_price1.textContent= "(inc. All the taxes) \n"+   "\n   available color \n" +"\n black black black";
+      catlog_price1.style.width = "140px"
+      catlog_price1.style.fontSize = "17px"
+      catlog_price1.style.marginTop = "-30px"
+     
+
+      
+
+      let catlog_name=document.createElement("p");
+      catlog_name.id = "des_name"
+      catlog_name.textContent=x.name;
+
+      let addtocart_btn=document.createElement("button");
+    addtocart_btn.id = "btn_cart_des"
+    addtocart_btn.innerText="ADD TO CART"+" "+ " ";
+
+    let fav_btn=document.createElement("button");
+    fav_btn.id = "btn_fav_des"
+    fav_btn.innerText="♡"+" "+ " ";
+  
+      
+     
+
+      addtocart_btn.onclick=function()
+      {
+        
+          addtoCart(x);
+      };
+
+
+      div1.append(catlog_name,catlog_price,catlog_price1,img1,addtocart_btn,fav_btn);
+      div.append(img,img01);
+
+    
+     
+     
+    //  console.log(div)
+
+    
+    parent.append(div);
+      parent.append(div1);
+    
+  
+
+
+}
+
+
+function addtoCart(p)
+{
+    let catlogue_cart=JSON.parse(localStorage.getItem("cart"));
+    catlogue_cart.push(p);
+
+    localStorage.setItem("cart",JSON.stringify(catlogue_cart));
+
+}
+
+showCatlogues();
+</script>
