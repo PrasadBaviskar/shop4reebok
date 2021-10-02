@@ -1,19 +1,27 @@
 
    let data = [
     {
+        img:"https://content.shop4reebok.com/static/Product-H62573/reebok_H62573_1.jpg.plp",
+        name:"WOMEN'S REEBOK CLASSICS REEBOK X PRINCE CROP TOP",
+        color:"pink",
+        mrp:2999,
+        selling_price : 1599,
+        size:9,
+    },
+    {
         img:"https://content.shop4reebok.com/static/Product-H02746/reebok_H02746_1.jpg.plp",
         name:"UNISEX REEBOK RUNNING ZIG KINETICA II SHOES",
         color:"Yellow",
-        mrp:1399,
-        selling_price : 9999,
+        mrp:9999,
+        selling_price : 1399,
         size:7,
     },
     {
         img:"https://content.shop4reebok.com/static/Product-GZ8800/reebok_GZ8800_1.jpg.plp",
         name:"UNISEX REEBOK RUNNING ZIG KINETICA II SHOES",
         color:"Black",
-        mrp:1199,
-        selling_price : 8999,
+        mrp:8999,
+        selling_price : 1199,
         size:8,
     },
     {
@@ -43,14 +51,7 @@
         size:9,
     },
 
-    {
-        img:"https://content.shop4reebok.com/static/Product-H62573/reebok_H62573_1.jpg.plp",
-        name:"WOMEN'S REEBOK CLASSICS REEBOK X PRINCE CROP TOP",
-        color:"pink",
-        mrp:2999,
-        selling_price : 1599,
-        size:9,
-    },
+ 
 
     {
         img:"https://content.shop4reebok.com/static/Product-HD2769/reebok_HD2769_1.jpg.plp",
@@ -65,8 +66,8 @@
         img:"https://content.shop4reebok.com/static/Product-H62572/reebok_H62572_1.jpg.plp",
         name:"UNISEX REEBOK RUNNING ZIG KINETICA II SHOES",
         color:"Grey",
-        mrp:8399,
-        selling_price : 4599,
+        mrp:839,
+        selling_price : 459,
         size:9,
     },
 
@@ -83,8 +84,17 @@
         img:"https://content.shop4reebok.com/static/Product-H00024/reebok_H00024_1.jpg.plp",
         name:"UNISEX REEBOK RUNNING ZIG KINETICA II SHOES",
         color:"Grey",
-        mrp:8399,
-        selling_price : 4599,
+        mrp:9399,
+        selling_price : 4459,
+        size:9,
+    },
+
+    {
+        img:"https://content.shop4reebok.com/static/Product-H59881/reebok_H59881_1.jpg.plp",
+        name:"UNISEX REEBOK RUNNING ZIG KINETICA II TSHIRT",
+        color:"Grey",
+        mrp:899,
+        selling_price : 499,
         size:9,
     },
 
@@ -98,11 +108,153 @@
     },
 
     {
+        img:"https://content.shop4reebok.com/static/Product-GS4186/reebok_reebok_GS4186_1.jpg.plp",
+        name:"UNISEX REEBOK RUNNING ZIG KINETICA II JACKET",
+        color:"Grey",
+        mrp:8399,
+        selling_price : 4299,
+        size:9,
+    },
+
+    {
+        img:"https://content.shop4reebok.com/static/Product-H48416/reebok_H48416_1.jpg.plp",
+        name:"UNISEX REEBOK RUNNING ZIG KINETICA II leggis",
+        color:"blue",
+        mrp:1199,
+        selling_price : 699,
+        size:9,
+    },
+
+    {
+        img:"https://content.shop4reebok.com/static/Product-H48415/reebok_H48415_1.jpg.plp",
+        name:"UNISEX REEBOK RUNNING ZIG KINETICA II LEGGISES",
+        color:"Grey",
+        mrp:999,
+        selling_price : 599,
+        size:5,
+    },
+
+    {
+        img:"https://content.shop4reebok.com/static/Product-HB1742/reebok_HB1742_1.jpg.plp",
+        name:"UNISEX REEBOK RUNNING ZIG KINETICA II CROP TOP",
+        color:"Grey",
+        mrp:99999,
+        selling_price : 88888,
+        size:9,
+    },
+
+    {
+        img:"https://content.shop4reebok.com/static/Product-FT1755/UNISEX_TRAINING_BAGS_FT1755_1.jpg.plp",
+        name:"UNISEX REEBOK RUNNING ZIG KINETICA II BAG",
+        color:"Black",
+        mrp:8399,
+        selling_price : 4599,
+        size:9,
+    },
+
+    {
+        img:"https://content.shop4reebok.com/static/Product-FL9600/UNISEX_CASUAL_HEADWEAR_FL9600_1.jpg.plp",
+        name:"UNISEX REEBOK RUNNING ZIG KINETICA II CAP",
+        color:"BLack",
+        mrp:999,
+        selling_price : 599,
+        size:9,
+    },
+    {
+        img:"https://content.shop4reebok.com/static/Product-H62573/reebok_H62573_1.jpg.plp",
+        name:"WOMEN'S REEBOK CLASSICS REEBOK X PRINCE CROP TOP",
+        color:"pink",
+        mrp:2999,
+        selling_price : 1599,
+        size:9,
+    },
+    {
+        img:"https://content.shop4reebok.com/static/Product-H02746/reebok_H02746_1.jpg.plp",
+        name:"UNISEX REEBOK RUNNING ZIG KINETICA II SHOES",
+        color:"Yellow",
+        mrp:9999,
+        selling_price : 1399,
+        size:7,
+    },
+    {
+        img:"https://content.shop4reebok.com/static/Product-GZ8800/reebok_GZ8800_1.jpg.plp",
+        name:"UNISEX REEBOK RUNNING ZIG KINETICA II SHOES",
+        color:"Black",
+        mrp:8999,
+        selling_price : 1199,
+        size:8,
+    },
+    {
         img:"https://content.shop4reebok.com/static/Product-H00024/reebok_H00024_1.jpg.plp",
         name:"UNISEX REEBOK RUNNING ZIG KINETICA II SHOES",
         color:"Grey",
         mrp:8399,
         selling_price : 4599,
+        size:9,
+    },
+
+    {
+        img:"https://content.shop4reebok.com/static/Product-H18221/reebok_rbk_H18221_1.jpg.plp",
+        name:"UNISEX REEBOK RUNNING ZIG KINETICA II MASK",
+        color:"Black",
+        mrp:899,
+        selling_price : 499,
+        size:9,
+    },
+
+    {
+        img:"https://content.shop4reebok.com/static/Product-H18221/reebok_rbk_H18221_1.jpg.plp",
+        name:"UNISEX REEBOK RUNNING ZIG KINETICA II Mask",
+        color:"Grey",
+        mrp:839,
+        selling_price : 499,
+        size:9,
+    },
+
+ 
+
+    {
+        img:"https://content.shop4reebok.com/static/Product-HD2769/reebok_HD2769_1.jpg.plp",
+        name:"UNISEX REEBOK CLASSICS PRINCE REEBOK DUFFEL BAG",
+        color:"blue",
+        mrp:10999,
+        selling_price : 9599,
+        size:9,
+    },
+
+    {
+        img:"https://content.shop4reebok.com/static/Product-H62572/reebok_H62572_1.jpg.plp",
+        name:"UNISEX REEBOK RUNNING ZIG KINETICA II SHOES",
+        color:"Grey",
+        mrp:839,
+        selling_price : 459,
+        size:9,
+    },
+
+    {
+        img:"https://content.shop4reebok.com/static/Product-H00024/reebok_H00024_1.jpg.plp",
+        name:"WOMEN'S REEBOK CLASSICS PRINCE REEBOK CROP TOP",
+        color:"cymon",
+        mrp:2999,
+        selling_price : 1599,
+        size:9,
+    },
+
+    {
+        img:"https://content.shop4reebok.com/static/Product-H00024/reebok_H00024_1.jpg.plp",
+        name:"UNISEX REEBOK RUNNING ZIG KINETICA II SHOES",
+        color:"Grey",
+        mrp:9399,
+        selling_price : 4459,
+        size:9,
+    },
+
+    {
+        img:"https://content.shop4reebok.com/static/Product-H59881/reebok_H59881_1.jpg.plp",
+        name:"UNISEX REEBOK RUNNING ZIG KINETICA II TSHIRT",
+        color:"Grey",
+        mrp:899,
+        selling_price : 499,
         size:9,
     },
 
@@ -116,47 +268,56 @@
     },
 
     {
-        img:"https://content.shop4reebok.com/static/Product-H00024/reebok_H00024_1.jpg.plp",
-        name:"UNISEX REEBOK RUNNING ZIG KINETICA II SHOES",
+        img:"https://content.shop4reebok.com/static/Product-GS4186/reebok_reebok_GS4186_1.jpg.plp",
+        name:"UNISEX REEBOK RUNNING ZIG KINETICA II JACKET",
         color:"Grey",
+        mrp:8399,
+        selling_price : 4299,
+        size:9,
+    },
+
+    {
+        img:"https://content.shop4reebok.com/static/Product-H48416/reebok_H48416_1.jpg.plp",
+        name:"UNISEX REEBOK RUNNING ZIG KINETICA II leggis",
+        color:"blue",
+        mrp:1199,
+        selling_price : 699,
+        size:9,
+    },
+
+    {
+        img:"https://content.shop4reebok.com/static/Product-H48415/reebok_H48415_1.jpg.plp",
+        name:"UNISEX REEBOK RUNNING ZIG KINETICA II LEGGISES",
+        color:"Grey",
+        mrp:999,
+        selling_price : 599,
+        size:5,
+    },
+
+    {
+        img:"https://content.shop4reebok.com/static/Product-HB1742/reebok_HB1742_1.jpg.plp",
+        name:"UNISEX REEBOK RUNNING ZIG KINETICA II CROP TOP",
+        color:"Grey",
+        mrp:99999,
+        selling_price : 88888,
+        size:9,
+    },
+
+    {
+        img:"https://content.shop4reebok.com/static/Product-FT1755/UNISEX_TRAINING_BAGS_FT1755_1.jpg.plp",
+        name:"UNISEX REEBOK RUNNING ZIG KINETICA II BAG",
+        color:"Black",
         mrp:8399,
         selling_price : 4599,
         size:9,
     },
 
     {
-        img:"https://content.shop4reebok.com/static/Product-H00024/reebok_H00024_1.jpg.plp",
-        name:"UNISEX REEBOK RUNNING ZIG KINETICA II SHOES",
-        color:"Grey",
-        mrp:8399,
-        selling_price : 4599,
-        size:9,
-    },
-
-    {
-        img:"https://content.shop4reebok.com/static/Product-H00024/reebok_H00024_1.jpg.plp",
-        name:"UNISEX REEBOK RUNNING ZIG KINETICA II SHOES",
-        color:"Grey",
-        mrp:8399,
-        selling_price : 4599,
-        size:9,
-    },
-
-    {
-        img:"https://content.shop4reebok.com/static/Product-H00024/reebok_H00024_1.jpg.plp",
-        name:"UNISEX REEBOK RUNNING ZIG KINETICA II SHOES",
-        color:"Grey",
-        mrp:8399,
-        selling_price : 4599,
-        size:9,
-    },
-
-    {
-        img:"https://content.shop4reebok.com/static/Product-H00024/reebok_H00024_1.jpg.plp",
-        name:"UNISEX REEBOK RUNNING ZIG KINETICA II SHOES",
-        color:"Grey",
-        mrp:8399,
-        selling_price : 4599,
+        img:"https://content.shop4reebok.com/static/Product-FL9600/UNISEX_CASUAL_HEADWEAR_FL9600_1.jpg.plp",
+        name:"UNISEX REEBOK RUNNING ZIG KINETICA II CAP",
+        color:"BLack",
+        mrp:999,
+        selling_price : 599,
         size:9,
     },
 
