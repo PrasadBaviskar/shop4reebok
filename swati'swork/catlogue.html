@@ -80,239 +80,75 @@ button{
 </body>
 </html>
 <script>
-    let data = [
+   let data = [
     {
-name:"UNISEX REEBOK TRAINING FACE COVER - 3 PACK",
-img:"https://content.shop4reebok.com/static/Product-HE7075/reebok_HE7075_1.jpg.plp",
-price:"699.00 ",
-},
-{
-name:"UNISEX REEBOK TRAINING FACE COVERS XS/S 3-PACK",
-img:"https://content.shop4reebok.com/static/Product-HA0434/reebok_HA0434_1.jpg.plp",
-price:"999.00 ",
-},
-{
-name:"UNISEX REEBOK TRAINING FACE COVER - 3 PACK",
-img:"https://content.shop4reebok.com/static/Product-HC4180/reebok_HC4180_1.jpg.plp",
-price:"999.00 ",
-},
-{
-name:"UNISEX REEBOK TRAINING FACE COVER - 3 PACK",
-img:"https://content.shop4reebok.com/static/Product-HB1284/reebok_rbk_HB1284_1.jpg.plp",
-price:"999.00 ",
-},
-{
-name:"KIDS-UNISEX REEBOK TRAINING JUNIOR MOTION BACKPACK",
-img:"https://content.shop4reebok.com/static/Product-DY0870/UNISEX_Training_BACKPACK_DY0870_1.jpg.plp",
-price:"880.00 ",
-},
-{
-name:"UNISEX-KIDS TRAINING U FOUNDATION BACKPACK",
-img:"https://content.shop4reebok.com/static/Product-FT1752/KIDS_TRAINING_BAGS_FT1752_1.jpg.plp",
-price:"999.00 ",
-},
-{
-name:"KIDS-BOYS REEBOK CLASSICS VERSA PUMP FURY SHOES",
-img:"https://content.shop4reebok.com/static/Product-FY9093/reebok_FY9093_1.jpg.plp",
-price:"1600.00 ",
-},
-{
-name:"MEN'S REEBOK CLASSICS GRAPHIC TRACK PANTS",
-img:"https://content.shop4reebok.com/static/Product-FT7184/reebok_FT7184_1.jpg.plp",
-price:"2499.00 ",
-},
-{
-name:"UNISEX REEBOK CLASSICS VECTOR TRACK PANTS",
-img:"https://content.shop4reebok.com/static/Product-GJ6014/adidas_GJ6014_1.jpg.plp",
-price:"2999.00 ",
-},
-{
-name:"MEN'S REEBOK TRAINING ESSENTIALS GR TEE",
-img:"https://content.shop4reebok.com/static/Product-GK9297/reebok_GK9297_1.jpg.plp",
-price:"779.00",
-},
-{
-name:"MEN'S REEBOK RUNNING ESSENTIALS RUN FAST TEE",
-img:"https://content.shop4reebok.com/static/Product-FU1337/reebok_FU1337_1.jpg.plp",
-price:"1199.00",
-},
-{
-name:"MEN'S REEBOK TRAINING ACTIVE BASIC GR TEE",
-img:"https://content.shop4reebok.com/static/Product-GK7866/reebok_GK7866_1.jpg.plp",
-price:"959.00 ",
-},
-{
-name:"WOMEN'S REEBOK TRAINING WORKOUT READY PP TIGHTS",
-img:"https://content.shop4reebok.com/static/Product-GL2842/adidas_GL2842_1.jpg.plp",
-price:"1199.00",
-},
-{
-name:"WOMEN'S REEBOK TRAINING FOUNDATION POLY TEE",
-img:"https://content.shop4reebok.com/static/Product-GQ8835/reebok_GQ8835_1.jpg.plp",
-price:"629.00 ",
-},
-{
-name:"WOMEN'S REEBOK TRAINING TEE JACKET",
-img:"https://content.shop4reebok.com/static/Product-FU1446/reebok_FU1446_1.jpg.plp",
-price:"719.00 ",
-},
-{
-name:"WOMEN'S REEBOK RUNNING ESSENTIALS SHORT SLEEVE TEE",
-img:"https://content.shop4reebok.com/static/Product-GT2338/reebok_GT2338_1.jpg.plp",
-price:"839.00",
-},
-{
-name:"WOMEN'S REEBOK TRAINING MEET YOU THERE TRACK PANTS",
-img:"https://content.shop4reebok.com/static/Product-FK6772/WOMEN_TRAINING_PANTS_FK6772_1.jpg.plp",
-price:"1499.00",
-},
-{
-name:"WOMEN'S REEBOK RUNNING RUN ESSENTIALS  PRINT LEGGINGS",
-img:"https://content.shop4reebok.com/static/Product-GL2296/reebok_GL2296_1.jpg.plp",
-price:"1859.00",
-},
-{
-name:"MEN'S REEBOK TRAINING BAS POLO TEE",
-img:"https://content.shop4reebok.com/static/Product-GK9171/reebok_GK9171_1.jpg.plp",
-price:"779.00",
-},
-{
-name:"MEN'S REEBOK TRAINING WORKOUT REEADY PANTS",
-img:"https://content.shop4reebok.com/static/Product-FP9120/reebok_FP9120_1.jpg.plp",
-price:"1079.00",
-},
-{
-name:"MEN'S REEBOK TRAINING MYT AOP JOGGERS",
-img:"https://content.shop4reebok.com/static/Product-FS8486/reebok_FS8486_1.jpg.plp",
-price:"1899.00",
-},
-{ 
-name:" MEN'S REEBOK RUNNING STRIDE RUNNER SHOES",
-img:"https://content.shop4reebok.com/static/Product-EX6056/reebok_EX6056_1.jpg.plp",
-price:"1139.00",
-},
-{
-name:"MEN'S REEBOK TRAINING REVOLUTION SHOES",
-img:"https://content.shop4reebok.com/static/Product-FW1880/reebok_FW1880_1.jpg.plp",
-price:"1040.00",
-},
-{
-name:"MEN'S REEBOK RUNNING VOYAGER 1.0 SHOES",
-img:"https://content.shop4reebok.com/static/Product-EX4329/reebok_EX4329_1.jpg.plp",
-price:"1379.00",
-},
-{
-name:"MEN'S RUNNING EMERGO RUNNER SHOES",
-img:"https://content.shop4reebok.com/static/Product-EX6049/reebok_EX6049_1.jpg.plp",
-price:"1679.00",
-
-},
-{
-name:"MEN'S REEBOK RUNNING FUSION LUX SHOES",
-img:"https://content.shop4reebok.com/static/Product-EX4215/reebok_EX4215_1.jpg.plp",
-price:"1259.00",
-},
-{
-name:"MEN'S REEBOK WALKING MECCARICK SLIP-ON SHOES",
-img:"https://content.shop4reebok.com/static/Product-EW5250/adidas_EW5250_1.jpg.plp",
-price:"1120.00 ",
-},
-{
-name:"MEN'S REEBOK TRAINING REVOLUTION SHOES",
-img:"https://content.shop4reebok.com/static/Product-FW1882/reebok_FW1882_1.jpg.plp",
-price:"1040.00",
-},
-{
-name:"MEN'S REEBOK RUNNING DRUHAN SHOES",
-img:"https://content.shop4reebok.com/static/Product-EW5195/adidas_EW5195_1.jpg.plp",
-price:"1720.00",
-},
-{
-name:"UNISEX REEBOK RUNNING LITE PLUS 2.0 SHOES",
-img:"https://content.shop4reebok.com/static/Product-FU8727/adidas_FU8727_1.jpg.plp",
-price:"2999.00",
-},
-{
-name:"MEN'S REEBOK RUNNING EDGE IDENTITY SHOES",
-img:"https://content.shop4reebok.com/static/Product-EW4977/reebok_EW4977_1.jpg.plp",
-price:"1559.00",
-},
-{
-name:"MEN'S REEBOK RUNNING AIM RUNNER SHOES",
-img:"https://content.shop4reebok.com/static/Product-EX4106/reebok_EX4106_1.jpg.plp",
-price:"2759.00",
-},
-{
-name:"MEN'S REEBOK RUNNING SPLASHER SHOES",
-img:"https://content.shop4reebok.com/static/Product-EX4312/reebok_EX4312_1.jpg.plp",
-price:"2399.00",
-},
-{
-name:"MEN'S REEBOK CLASSICS JURASSIC PARK STOMPER SHOES",
-img:"https://content.shop4reebok.com/static/Product-GX5412/reebok_GX5412_1.jpg.plp",
-price:"15999.00 ",
-},
-{
-name:"UNISEX REEBOK RUNNING ZIG KINETICA II SHOES",
-img:"https://content.shop4reebok.com/static/Product-H02746/reebok_H02746_1.jpg.plp",
-price:"9999.00",
-},
-{
-name:"WOMEN'S REEBOK RUNNING AIM RUNNER SHOES",
-img:"https://content.shop4reebok.com/static/Product-FX9405/reebok_FX9405_1.jpg.plp",
-price:"2299.00",
-},
-{
-name:"WOMEN'S REEBOK RUNNING ZIG KINETICA II SHOES",
-img:"https://content.shop4reebok.com/static/Product-H05715/reebok_H05715_1.jpg.plp",
-price:"9999.00 ",
-},
-{
-name:"UNISEX REEBOK CLASSICS ZX FURY SHOES",
-img:"https://content.shop4reebok.com/static/Product-GZ6593/reebok_GZ6593_1.jpg.plp",
-price:"18999.00",
-},
-{
-name:"UNISEX REEBOK BILLIONAIRE INSTAPUMP FURY BOOST SHOES",
-img:"https://content.shop4reebok.com/static/Product-GZ5363/reebok_GZ5363_1.jpg.plp",
-price:"13999.00 ",
-},
+        img:"https://content.shop4reebok.com/static/Product-H02746/reebok_H02746_1.jpg.plp",
+        name:"UNISEX REEBOK RUNNING ZIG KINETICA II SHOES",
+        color:"Yellow",
+        mrp:1399,
+        selling_price : 9999,
+        size:7,
+    },
+    {
+        img:"https://content.shop4reebok.com/static/Product-GZ8800/reebok_GZ8800_1.jpg.plp",
+        name:"UNISEX REEBOK RUNNING ZIG KINETICA II SHOES",
+        color:"Black",
+        mrp:1199,
+        selling_price : 8999,
+        size:8,
+    },
+    {
+        img:"https://content.shop4reebok.com/static/Product-H00024/reebok_H00024_1.jpg.plp",
+        name:"UNISEX REEBOK RUNNING ZIG KINETICA II SHOES",
+        color:"Grey",
+        mrp:8399,
+        selling_price : 4599,
+        size:9,
+    }
 ];
 
-
-    let parent=document.getElementById("catlogue");
+    
+let parent=document.getElementById("catlogue");
      
     function showCatlogues(d){
        
-        d.forEach(function(catlog)
-        {
-          let div=document.createElement('div');
-          let img=document.createElement("img");
-    
+        d.forEach(function(product)
+        { 
+            let div = document.createElement("div");
+    // let parent = document.getElementById("products");
 
-          img.src=catlog.img;
+    let img = document.createElement("img");
+    img.src = product.img;
 
-          let catlog_price=document.createElement("p");
-           catlog_price.textContent=catlog.price;
+    let name = document.createElement("p");
+    name.textContent= product.name;
 
-           let catlog_name=document.createElement("p");
-           catlog_name.textContent=catlog.name;
+    let color = document.createElement("p");
+    color.textContent = "Color :" + product.color;
 
-           let addtocart_btn=document.createElement("button");
-           
-           addtocart_btn.innerText="ADD TO CART"+" "+"🛒";
+    console.log(color)
 
-           addtocart_btn.onclick=function()
-           {
-               addtoCart(catlog);
-           };
+    let size = document.createElement("p");
+    size.textContent = "Size :" + product.size;
 
-           div.append(img,catlog_name,catlog_price,addtocart_btn);
+    let mrp = document.createElement("p");
+    mrp.textContent = product.mrp;
+    mrp.style.fontSize = "14px"
+    mrp.style.textDecoration = "line-through"
 
-           parent.append(div);
+    let price = document.createElement("p");
+    price.textContent = product.selling_price;
 
+    let btn = document.createElement("button");
+    btn.innerHTML = "Add to Cart"
+    btn.onclick = function(){
+        add_to_cart(product);
+    }
 
-        });
+    div.append(img, name, color, size, price, mrp, btn);
+
+    parent.append(div);
+});
     }
 showCatlogues(data);
 
@@ -321,7 +157,7 @@ if(localStorage.getItem("cart")===null)
 {
     localStorage.setItem("cart",JSON.stringify([]));
 }
-function addtoCart(p)
+function add_to_cart(p)
 {
     let catlogue_cart=JSON.parse(localStorage.getItem("cart"));
     catlogue_cart.push(p);
