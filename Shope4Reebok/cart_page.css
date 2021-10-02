@@ -285,12 +285,12 @@
 
 
 .details{
-    /* background-color: cadetblue; */
+   
     display: grid;
     grid-template-columns: 60% 20% 15%;
     gap: 5%;
     height: 80px;
-    /* flex-direction: column; */
+ 
     padding: 5px;
     margin-top: 17px;   
     border-bottom:1px solid grey ;
