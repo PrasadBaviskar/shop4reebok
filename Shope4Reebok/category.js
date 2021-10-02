@@ -167,7 +167,7 @@
         name:"WOMEN'S REEBOK CLASSICS REEBOK X PRINCE CROP TOP",
         color:"pink",
         mrp:2999,
-        selling_price : 1599,
+        selling_price : 1699,
         size:9,
     },
     {
