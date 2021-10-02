@@ -80,14 +80,7 @@
         size:9,
     },
 
-    {
-        img:"https://content.shop4reebok.com/static/Product-H00024/reebok_H00024_1.jpg.plp",
-        name:"UNISEX REEBOK RUNNING ZIG KINETICA II SHOES",
-        color:"Grey",
-        mrp:9399,
-        selling_price : 4459,
-        size:9,
-    },
+
 
     {
         img:"https://content.shop4reebok.com/static/Product-H59881/reebok_H59881_1.jpg.plp",
@@ -218,7 +211,7 @@
         name:"UNISEX REEBOK CLASSICS PRINCE REEBOK DUFFEL BAG",
         color:"blue",
         mrp:10999,
-        selling_price : 9599,
+        selling_price : 9509,
         size:9,
     },
 
