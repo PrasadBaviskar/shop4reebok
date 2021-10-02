@@ -220,7 +220,7 @@
         name:"UNISEX REEBOK CLASSICS PRINCE REEBOK DUFFEL BAG",
         color:"blue",
         mrp:10999,
-        selling_price : 9509,
+        selling_price : 9510,
         size:9,
     },
 
