@@ -189,9 +189,9 @@
     {
         img:"https://content.shop4reebok.com/static/Product-H00024/reebok_H00024_1.jpg.plp",
         name:"UNISEX REEBOK RUNNING ZIG KINETICA II SHOES",
-        color:"Grey",
+        color:"Dark Gray",
         mrp:8399,
-        selling_price : 4599,
+        selling_price : 4509,
         size:9,
     },
 
