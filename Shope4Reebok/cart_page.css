@@ -132,9 +132,7 @@
   .header #mainnav > ul > li > a {
       line-height: 100px;
   }
-  #mainnav > ul > li.home > a {
-      /* color: #18ba60; */
-  }
+ 
   #mainnav > ul > li > a {
       position: relative;
       display: block;
@@ -284,10 +282,6 @@
 }
 
 
-/* #order_summary>div:nth-child(1){
-    margin-left: 5px;
-    font-weight: 600;
-} */
 
 
 .details{
