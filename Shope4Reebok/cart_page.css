@@ -411,16 +411,16 @@ a{
     }
     #container{
         width: auto;
-        /* width: 1124px; */
+      
         margin: auto;
         display: flex;
         flex-direction: column;
-        /* grid-template-columns: 75% 25%; */
+       
     }
 
     #nav{
         visibility: hidden;
-        /* position: absolute; */
+      
         width: auto;
     }
 }
