@@ -148,7 +148,7 @@
     {
         img:"https://content.shop4reebok.com/static/Product-FT1755/UNISEX_TRAINING_BAGS_FT1755_1.jpg.plp",
         name:"UNISEX REEBOK RUNNING ZIG KINETICA II BAG",
-        color:"Black",
+        color:"Green",
         mrp:8399,
         selling_price : 4599,
         size:9,
