@@ -207,7 +207,7 @@
         name:"UNISEX REEBOK RUNNING ZIG KINETICA II Mask",
         color:"Grey",
         mrp:839,
-        selling_price : 499,
+        selling_price : 399,
         size:9,
     },
 
