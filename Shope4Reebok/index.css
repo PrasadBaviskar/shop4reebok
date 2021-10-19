@@ -131,7 +131,7 @@ body {
   }
   .nav > #nav-check:checked + .nav-links {
     height: calc(100vh - 50px);
-    overflow-y: auto;
+    overflow-y: scroll;
   }
 }
 
@@ -350,6 +350,10 @@ border-radius: 40px;
   #myslideshow img{
     width: 100%;
    
+  }
+  .nav-cs li {
+    visibility: hidden;
+
   }
   #cat_div{
     display: flex;
