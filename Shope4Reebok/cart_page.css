@@ -428,7 +428,7 @@ a{
 @media(max-width:768px){
     .details{
    
-        display: grid;
+        display: flex;
         grid-template-columns: 60% 20% 15%;
         gap: 5%;
         height: 80px;

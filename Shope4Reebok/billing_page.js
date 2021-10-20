@@ -44,6 +44,6 @@ document.getElementById("sum").textContent = desk["final_amt"]
 
 
 function payment(e){
-e.preventDefault();
-window.location.href = 'payment_page.html';
+  e.preventDefault();
+  window.location.href = 'payment_page.html';
 }
