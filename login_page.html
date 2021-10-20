@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & SignUp</title>
+</head>
+
+<link rel="stylesheet" href="login_page.css">
+
+ 
+
+
+
+    
+<body>
+  <div class="nav">
+    <div class="nav-header">
+      <div class="nav-title">
+        <a href="https://shop4reebok.com/" target="_blank"> <img style="width: 100%;"  src="images/reeboklogo.jpg"/></a>
+      </div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    <input type="checkbox" id="nav-check">
+    <div class="nav-links">
+      <a target="_blank">Men</a>
+      <a target="_blank">Women</a>
+      <a target="_blank">Kids</a>
+      <a  target="_blank">Explore</a>
+      <a  target="_blank">Sale</a>
+      <a  target="_blank">Shope near you</a>
+  
+      
+    </div>
+  
+    <div class="nav-cs">
+  
+      <li class ="cart" style="width: 50%;"> <input type="text"  placeholder="Search here"></li>
+      <li class ="cart"> <img src="images/cart1.png"/></li>
+       </div>
+  </div>
+  
+    <h2 id="b1">SIGN IN </h2>
+    <div id="box">
+        <div>
+            <h4>REGISTERED MEMBERS </h4>
+            <p>If you've created an account with us, please enter your email address and password.</p>
+          
+            <form id="idk1" onsubmit="login(event)" action="">
+                 <input class = "i1" type= "text" id="Email" placeholder="Enter Your Email"/>
+                <input class = "i1" type= "password" id="password" placeholder="Enter Your Password"/>
+                <div class="box1">
+                    <button class="buttonLS">Sign In &rtrif; </button>
+                 </div>
+                <hr/>
+                <div class="distance">Forgot your password?</div> 
+               
+             </form>
+             
+     </div>
+     <p class="line"></p> 
+      <div>
+            <h4> NEW CUSTOMERS</h4>
+             <p>If you don't have an account with us, or are just unsure then enter your information below.</p>
+             
+             <form id="idk" onsubmit="signup(event)" action="">
+             <input class = "i1" type= "text" id="First_Name" placeholder="First Name"/>
+             <input class = "i1" type= "text" id="Last_Name" placeholder="Last Name"/>
+              <input class = "i1" type= "text" id="Email_1" placeholder="Email"/>
+             <input class = "i1" type= "password" id="password_1" placeholder="Password">
+               <p id="color">Password should have at least a minimum of one letter, one number and is at least 8 characters long</p>
+                <input class = "i1" type= "[aswo]" id="password_2" placeholder="Re-type Password"/> 
+                
+                <div  id="box2">
+                <input class = "i1" type="radio" id="Gender" name="fav_language" value=""/>
+                <label for="html">Male</label>
+                <input class = "i1" type="radio" id="Gender_1" name="fav_language" value=""/>
+                <label for="html">Female</label> <br>
+                </div>
+                <hr/>
+                <div class="box1">
+                    
+                    <button class="buttonLS">Sign Up &rtrif; </button>
+                    </div>
+                
+            </form>    
+     </div>
+     <p class="line"></p>
+         <div>
+              <h4>USE YOUR  SOCIAL NETWORK</h4>
+             <p> Sign in using your existing Facebook information</p>
+              <div id="fb">
+                
+    <a href="https://www.facebook.com/"><img src = "https://tse1.mm.bing.net/th?id=OIP.aYVbqEFb2M-SWsBh_LafIQHaHa&pid=Api&rs=1&c=1&qlt=40&w=60&h=60 " /> </a>
+              </div>
+          </div>
+ </div>
+ <!-- ............................... -->
+
+
+  <!-- FOOTER START -->
+  <div class="footer">
+    <div class="contain">
+        <div id="footerdiv1">
+            <h2>Free shiping + free 30 Days return*</h2>
+            <h2>Call Us Between 8AM To 8PM: 1-800-120-440</h2>
+            <h2>EmailUs: Customer.Care@Reebok.com</h2>
+        </div>
+    <div class="col">
+      <div>
+      <h1>Men</h1>
+      <ul>
+        <li>Footware</li>
+        <li>Clothing</li>
+        <li>Services</li>
+        <li>Accessories</li>
+       
+      </ul>
+    </div>
+    <div>
+        <h1>Women</h1>
+        <ul>
+          <li>Footware</li>
+          <li>Clothing</li>
+         
+          <li>Accessories</li>
+         
+        </ul>
+      </div>
+
+      <div>
+        <h1>Kids</h1>
+        <ul>
+          <li>Footware</li>
+          <li>Clothing</li>
+         
+          <li>Accessories</li>
+         
+        </ul>
+      </div>
+    </div>
+    <div class="col">
+      <h1>Fitness</h1>
+      <ul>
+        <li>Running</li>
+        <li>Training</li>
+        <li>Classics</li>
+        <li>Walking</li>
+        <li>Mix meterial Arts</li>
+        <li>Swimming</li>
+      </ul>
+    </div>
+    <div class="col">
+        <div>
+      <h1>Quick Shop</h1>
+      <ul>
+        <li>Running</li>
+        <li>Training</li>
+        <li>Classics</li>
+        <li>Walking</li>
+        <li>Mix meterial Arts</li>
+        <li>Sale</li>
+      </ul>
+    </div>
+
+    <div>
+        <h1>New Arrivals</h1>
+        <ul>
+          <li>New Arrivals</li>
+         
+          
+        </ul>
+      </div>
+    </div>
+    <div class="col">
+      <h1>Customer Services</h1>
+      <ul>
+        <li>Contact Us </li>
+        <li>My Account</li>
+        <li>*Privacy Policy</li>
+        <li>*Terms And Condition</li>
+      
+      </ul>
+    </div>
+    
+    </div> -->
+    <div class="col social">
+      <h1>Social</h1>
+      <ul>
+       
+       
+       
+      </ul>
+    </div>
+
+  <div class="clearfix"></div>
+  
+  </div>
+  <div id="promotionfooter">
+    <h1>SIGN UP AND GET <span style="color: rgb(248, 88, 115);">  15% OFF</span> <button> SignUP  &rtrif;</button></h1>
+    </div>
+    <img id="imgfooter" src="images/payment1.jpg"/>
+  
+   <h2 id="footerll">©2021 SHOP4REEBOK.COM | POWERED BY : ADI SPORTS (INDIA) PVT. LTD. <img src="images/adi.jpg"/></h2>
+  </div>
+  <!-- END OF FOOTER -->
+
+</body>
+</html>
+<script src="login_page.js">
+
+</script>
+    
+   

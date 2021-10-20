@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="category.css">
+
+<body>
+
+
+  <div class="nav">
+    <div class="nav-header">
+      <div class="nav-title">
+        <a href="https://shop4reebok.com/" target="_blank"> <img style="width: 100%;"  src="images/reeboklogo.jpg"/></a>
+      </div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    <input type="checkbox" id="nav-check">
+    <div class="nav-links">
+      <a target="_blank">Men</a>
+      <a target="_blank">Women</a>
+      <a target="_blank">Kids</a>
+      <a  target="_blank">Explore</a>
+      <a  target="_blank">Sale</a>
+      <a  target="_blank">Shope near you</a>
+  
+      
+    </div>
+  
+    <div class="nav-cs">
+  
+      <li class ="cart" style="width: 50%;"> <input type="text"  placeholder="Search here"></li>
+      <li class ="cart"> <img src="images/cart1.png"/></li>
+       </div>
+  </div>
+  
+
+
+   <div id = "btnview"> 
+      
+    <select id="Sort_By" onchange="sort1(this.value)">
+      <option value="new Arrivals">New Arrivals</option>
+      <option value="populer"> Populer</option>
+      
+        <option value="sortLH">Sort low to High </option>
+        <option value="sortHL">Sort high to low </option>
+       
+    </select>
+
+
+  <h3 > View: </h3>
+   <button class="btn3" onclick="show10()">09</button>
+   <button  class="btn3"onclick="show20()">15</button>
+   <button  class="btn3" onclick="show30()">30</button>
+   <!-- <button class="btn3" onclick="show40()">36</button> -->
+   
+</div>
+
+
+
+<div id="catflex">
+
+
+<div>
+
+
+<!-- side filter start -->
+
+
+    <div style="display: flex; flex-direction: column;">
+        <div>
+        <label class="dropdown">
+    
+            <div class="dd-button">
+            Gender
+            </div>
+          
+            <input type="checkbox" class="dd-input" id="test">
+          
+            <ul class="dd-menu">
+              <li><input type="checkbox"/> Male</li>
+              <li><input type="checkbox"/> Female</li>
+            
+            </ul>
+            
+          </label>
+          
+        </div>
+    
+        <!-- ..... -->
+    
+        <div>
+            <label class="dropdown">
+        
+                <div class="dd-button">
+                Category
+                </div>
+              
+                <input type="checkbox" class="dd-input" id="test">
+              
+                <ul class="dd-menu">
+                  <li><input type="checkbox"/> Clothing</li>
+                  <li><input type="checkbox"/> Accessories</li>
+                
+                </ul>
+                
+              </label>
+              
+            </div>
+    
+              <!-- ..... -->
+    
+        <div>
+            <label class="dropdown">
+        
+                <div class="dd-button">
+                Product Type
+                </div>
+              
+                <input type="checkbox" class="dd-input" id="test">
+              
+                <ul class="dd-menu">
+                  <li><input type="checkbox"/> Other Apparel</li>
+                 
+                </ul>
+                
+              </label>
+              
+            </div>
+    
+              <!-- ..... -->
+    
+        <div>
+            <label class="dropdown">
+        
+                <div class="dd-button">
+                Size
+                </div>
+              
+                <input type="checkbox" class="dd-input" id="test">
+              
+                <ul class="dd-menu">
+                    <div style="display: flex;">
+                  <li> <button>S</button></li>
+                  <li> <button>M</button></li>
+                  <li> <button>XL</button></li>
+                  <li> <button>XXL</button></li>
+                </div>
+                </ul>
+                
+              </label>
+              
+            </div>
+    
+              <!-- ..... -->
+    
+        <div>
+            <label class="dropdown">
+        
+                <div class="dd-button">
+               COLOR
+                </div>
+              
+                <input type="checkbox" class="dd-input" id="test">
+              
+                <ul class="dd-menu">
+                    <div style="display: flex;">
+                        <li> <button>S</button></li>
+                        <li> <button>M</button></li>
+                        <li> <button>XL</button></li>
+                        <li> <button>XXL</button></li>
+                      </div>
+                 
+                </ul>
+                
+              </label>
+              
+            </div>
+    
+               <!-- ..... -->
+    
+        <div>
+            <label class="dropdown">
+        
+                <div class="dd-button">
+           Brands
+                </div>
+              
+                <input type="checkbox" class="dd-input" id="test">
+              
+                <ul class="dd-menu">
+                  <li><input type="checkbox"/>Sports</li>
+                 
+                </ul>
+                
+              </label>
+              
+            </div>
+             <!-- ..... -->
+    
+             <div>
+                <label class="dropdown">
+            
+                    <div class="dd-button">
+            COLLECTION
+                    </div>
+                  
+                    <input type="checkbox" class="dd-input" id="test">
+                  
+                    <ul class="dd-menu">
+                      <li><input type="checkbox"/>Aov</li>
+                      <li><input type="checkbox"/>Collaboration</li>
+                      <li><input type="checkbox"/>facecover</li>
+                      <li><input type="checkbox"/>Gift</li>
+                      
+                     
+                    </ul>
+                    
+                  </label>
+                  
+                </div>
+    
+                 <!-- ..... -->
+    
+             <div>
+                <label class="dropdown">
+            
+                    <div class="dd-button">
+           SPORTS
+                    </div>
+                  
+                    <input type="checkbox" class="dd-input" id="test">
+                  
+                    <ul class="dd-menu">
+                      <li><input type="checkbox"/>Training</li>
+                     
+                      
+                     
+                    </ul>
+                    
+                  </label>
+                  
+                </div>
+    
+                      <!-- ..... -->
+    
+             <div>
+                <label class="dropdown">
+            
+                    <div class="dd-button">
+          TECHNOLOGY
+                    </div>
+                  
+                    <input type="checkbox" class="dd-input" id="test">
+                  
+                    
+                  </label>
+                  
+                </div>
+    
+                      <!-- ..... -->
+    
+             <div>
+                <label class="dropdown">
+            
+                    <div class="dd-button">
+        Price Range
+                    </div>
+                  
+                    <input type="checkbox" class="dd-input" id="test">
+                  
+                    <ul class="dd-menu">
+                      <li> <div class="range-wrap">
+                        <div class="range-value" id="rangeV"></div>
+                        <input id="range" type="range" min="200" max="800" value="200" step="1">
+                    </div></li>
+                     
+                      
+                     
+                    </ul>
+                    
+                  </label>
+                  
+                  
+                </div>
+    
+            </div>
+    <!--  side filter  end -->
+
+
+</div>
+    <div id="catlogue"></div>
+
+</div>
+   
+   
+</body>
+</html>
+
+
+
+  
+
+
+<script src="category.js">
+  
+
+</script>

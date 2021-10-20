@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payement</title>
+    <link rel="stylesheet" href="payment_page.css">
+</head>
+<body>
+ 
+  <div class="nav">
+    <div class="nav-header">
+      <div class="nav-title">
+        <a href="https://shop4reebok.com/" target="_blank"> <img style="width: 100%;"  src="images/reeboklogo.jpg"/></a>
+      </div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    <input type="checkbox" id="nav-check">
+    <div class="nav-links">
+      <a target="_blank">Men</a>
+      <a target="_blank">Women</a>
+      <a target="_blank">Kids</a>
+      <a  target="_blank">Explore</a>
+      <a  target="_blank">Sale</a>
+      <a  target="_blank">Shope near you</a>
+  
+      
+    </div>
+  
+    <div class="nav-cs">
+  
+      <li class ="cart" style="width: 50%;"> <input type="text"  placeholder="Search here"></li>
+      <li class ="cart"> <img src="images/cart1.png"/></li>
+       </div>
+  </div>
+  
+    
+    <div id="container">
+        <div class="pytmlogo">
+            <img src="images/paytmpic.png" alt="paytm" >
+            <p class="pay"> Payable Amount is <p id="pay_amt"> 0.00 </p> </p>
+        </div>
+
+        <div id="col1">
+          
+        </div>
+
+        <div id="col2">
+            <div class="form" id="form">
+              <form action="" onsubmit="confirm_order(event)">  
+                
+                <div class="row1"> 
+                    <p id="card_formt"> Credit Card Number </p>
+                    <div>  <input id="card_no" required class="ipdc_no" type="number" placeholder="Enter 16 digit Card number" max="9999999999999999"/> </div> 
+                </div>
+
+                <div class="row1"> 
+                    <p> Expiry </p>
+                    <div>  <input required type="month"/> </div> 
+                </div>
+
+                <div class="row1"> 
+                    <p> CVV </p>
+                    <div>  <input id="cvv" required type="number"/> </div> 
+                </div>
+
+                <div class="row1"> 
+                    <p> Name On Card </p>
+                    <div>  <input required type="text"/> </div> 
+                </div>
+                
+                <div> 
+                    <input  class="btn" type="submit" value="Proceed"> 
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="payment_page.js">
+  
+</script>

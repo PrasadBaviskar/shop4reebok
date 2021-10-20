@@ -1,0 +1,231 @@
+    
+
+/* nav start  */
+
+
+  /* nav end */
+
+
+
+
+
+
+
+        #des_price{
+            font-size: 30px;
+            margin-top: 25px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            width: 300px;
+            /* margin-left: -390px; */
+        }
+        
+        #des_name{
+            /* margin-left: -20px; */
+            font-size: 30px;
+          width: 450px;
+           font-family: 'Times New Roman', Times, serif;
+        }
+       
+        #btn_cart_des{
+            width: 250px;
+            height: 50px;
+            background-color: rgb(255, 0, 128);
+        }
+        #img1_des{
+            width: 100px;
+            margin-left:200px;
+            margin-top:-100px;
+            
+        }
+        #btn_fav_des{
+           
+           margin-left: 0px;
+           width: 50px;
+           height: 50px;
+        }
+
+
+
+        
+
+#zoom { 
+width: 250px; 
+float:left;
+z-index: 10;
+    -webkit-transition: all .3s ease-out; 
+    -moz-transition: all .3s ease-out; 
+    -o-transition: all .3s ease-out; 
+    transition: all .3s ease-out; 
+-webkit-backface-visibility: hidden;
+-webkit-perspective: 1000;
+}
+
+#zoom:hover { 
+    -moz-transform: scale(2);
+    -webkit-transform: scale(2);
+    -o-transform: scale(2);
+    transform: scale(2);
+    -ms-transform: scale(2);
+filter: 
+    progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand',
+    M11=2, M12=-0, M21=0, M22=2);
+  
+}
+
+.image { 
+margin: 0; 
+border: 0 }
+
+.left {
+width: 250px; 
+float:left;
+z-index: 10; 
+overflow: hidden;
+  
+}
+
+
+
+
+
+
+.des_spec{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 50px;
+    margin: 0% 1%;
+}
+
+    .des_spec>h2{
+        border: 1px solid black;
+        text-align: center;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+    .des_spec>h2:hover{
+        border: 3px solid maroon;
+    }
+    #showing_element{
+        margin-top: 2%;
+        padding:30px 20px;
+        font-size: 20px;
+    }
+    #showing_element>ul>li{
+        margin-top: 2%;
+    }
+    #showing_element>div{
+        
+        line-height:40px;
+    }
+
+    
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0px;
+    font-family: 'segoe ui';
+  }
+  
+  .nav {
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    position: relative;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    float: left;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: left;
+    font-size: 15px;
+  }
+  .nav > .nav-cs {
+    display: flex;
+    flex-direction: row;
+    margin-right: 60px;
+    float: right;
+    
+  }
+  .nav img{
+    width: 50%;
+  }
+  
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: #efefef;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  @media (max-width:992px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: black;;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) + .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked + .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: scroll;
+    }
+  }
+  
