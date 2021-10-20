@@ -5,7 +5,7 @@
   /* nav end */
 
 
-#nav{
+  #nav{
     width: 1093px;
     margin: auto;
     display: grid;
@@ -95,7 +95,7 @@
       border-radius: 3px;
     }
     
-    input[type=text] {
+    input[type=text],input[type="email"] {
       width: 100%;
       margin-bottom: 15px;
       padding: 12px;

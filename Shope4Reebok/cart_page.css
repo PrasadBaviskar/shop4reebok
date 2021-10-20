@@ -424,3 +424,25 @@ a{
         width: auto;
     }
 }
+
+@media(max-width:768px){
+    .details{
+   
+        display: flex;
+        grid-template-columns: 60% 20% 15%;
+        gap: 5%;
+        height: 80px;
+        /* background-color: #c71432; */
+        border-bottom: none;
+        padding: 10px;
+        margin-top: 5px;   
+     
+    }
+
+    #products{
+        display: flex;
+        flex-direction: column;
+        /* grid-template-columns: 20% 77%;
+        gap: 2%; */
+    }
+}

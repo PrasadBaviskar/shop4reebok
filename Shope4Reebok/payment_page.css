@@ -1,5 +1,7 @@
 /* nav start */
-
+#mainnav{
+    visibility: hidden;
+}
 
 #nav_div_l_s{
     display: flex;
@@ -219,7 +221,7 @@
     padding: 1%;
     grid-template-columns: 29% 69%;
     /* back ground color effect */
-    background-image: linear-gradient(white, white, white, #374ecc);   
+    background-image: linear-gradient(white, white, white, #00baf2);   
 
     border-radius: 10px;
     margin-top: 5%;
@@ -247,6 +249,7 @@
     padding: 2%;
     width: 50%;
     margin: auto;
+    margin-top: -7%;
 }
 
 .active_bg{
@@ -254,13 +257,13 @@
     color: honeydew;
 }
 
-.form{
+.form>form{
     display: grid;
     gap: 10px;
     grid-template-columns: auto auto;
 }
 
-.form>div:nth-child(1), div:nth-child(4), div:nth-child(5){
+.form> form>div:nth-child(1), .form> form> div:nth-child(4),.form> form>div:nth-child(5){
     grid-column-start: 1;
     grid-column-end: 3;
 }
@@ -268,16 +271,22 @@
 input{
     width: 100%;
     height: 25px;
+    margin-top: 4px;
 }
 
 .btn{
     background-color: #374ecc;
-    width: 100%;
+    width: 103%;
     padding: 7px;
+    height: 35px;
     text-align: center;
     color: honeydew;
     border-radius: 3px;
     margin-top: 3px;
+}
+
+.row1>p{
+    margin-bottom: 0px;
 }
 
 .btn:hover{
@@ -303,4 +312,72 @@ p{
     color: #374ecc;
     font-size: 16px;
     font-weight: 600;
+}
+
+@media(max-width:768px){
+    #container{
+        width: 95%;
+        border: 1px solid #374ecc;
+        margin: auto;
+        display: grid;
+        /* padding: 1%; */
+        grid-template-columns: 29% 69%;
+        /* back ground color effect */
+        background-image: linear-gradient(white, white, white, #00baf2);   
+        
+        border-radius: 10px;
+        margin-top: 5%;
+    }
+
+    #pay_amt{
+        visibility: hidden;
+        position: absolute;
+    }
+    .pay{
+        visibility: hidden;
+        position: absolute;
+
+    }
+
+    #col2{
+        padding: 2%;
+        width: auto;
+        margin: auto;
+        margin-top: -7%;
+    }
+
+    .pytmlogo>img{
+        width: 90%;
+    }
+
+    
+.form>form{
+    width: 200px;
+}
+.row1{
+    width: 180px;
+}
+
+.btn{
+    background-color: #374ecc;
+    width: 95%;
+    padding: 7px;
+    height: 35px;
+    text-align: center;
+    color: honeydew;
+    border-radius: 3px;
+    margin-top: 3px;
+}
+.form> form>div:nth-child(3){
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+}
+
+@media(max-width:400px) {
+    .form> form>div:nth-child(3){
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
 }
