@@ -168,6 +168,7 @@ body {
   flex-direction: row-reverse;
   background-color: black;
   margin: 0px;
+  border-bottom: 1px solid gainsboro;
 
 }
 #nav_div_l_s > h2{
