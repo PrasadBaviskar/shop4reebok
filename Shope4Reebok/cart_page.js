@@ -126,41 +126,52 @@ function remove_item(e, prod){
 }
 
 // check & apply promocode
+var count = 1;
 
-function check_code(){
+function check_code(){ 
 
-    let code = document.getElementById("promocode").value;
-
-    if(code == "masai30"){
-        let disc_value = (sum / 100) * 30;
-        sum = sum - (sum / 100) * 30;
-
-        sum_p = document.getElementById("sum");
-        let ar = sum_p.textContent.split(" ");
-        ar[2] = sum;
-        sum_p.textContent = ar.join(" ");
-
-        sum1 = document.getElementById("total");
-        let ar2 = sum1.textContent.split(" ");
-        ar2[2] = sum;
-        sum1.textContent = ar2.join(" ");
-
-        let disc = document.getElementById("discount");
-        let disc_amt = disc.textContent.split(" ");
-        console.log(sum)
-        disc_amt[1] = disc_value;
-        console.log(disc_amt);
-        disc.textContent = disc_amt.join(" ")
-
-        let desk = JSON.parse(localStorage.getItem("checkout_desk"));
-        desk["discount"] = disc_amt.join(" ");
-
-        localStorage.setItem("checkout_desk",JSON.stringify(desk));
-
+    if(count == 1){
+        let code = document.getElementById("promocode").value;
+        if(code == "masai30"){
+            let disc_value = (sum / 100) * 30;
+            disc_value = disc_value.toFixed(2)
+            sum = sum - (sum / 100) * 30;
+    
+            sum_p = document.getElementById("sum");
+            let ar = sum_p.textContent.split(" ");
+            ar[2] = sum;
+            sum_p.textContent = ar.join(" ");
+    
+            sum1 = document.getElementById("total");
+            let ar2 = sum1.textContent.split(" ");
+            ar2[2] = sum;
+            sum1.textContent = ar2.join(" ");
+    
+            let disc = document.getElementById("discount");
+            let disc_amt = disc.textContent.split(" ");
+            console.log(sum)
+            disc_amt[1] = disc_value;
+            console.log(disc_amt);
+            disc.textContent = disc_amt.join(" ")
+    
+            let desk = JSON.parse(localStorage.getItem("checkout_desk"));
+            desk["discount"] = disc_amt.join(" ");
+    
+            localStorage.setItem("checkout_desk",JSON.stringify(desk));
+            count = 0;
+    
+        }
+        else{
+            alert("please enter valid promocode")
+        }
     }
     else{
-        alert("please enter valid promocode")
+        alert("the promocode has already been used..")
     }
+
+    
+
+    
 }
 
 // function address_form(e){
