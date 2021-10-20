@@ -109,9 +109,23 @@ function getform(n){
 }
 
 
-function confirm_order(){
-    setTimeout(function(){
-        window.location.href = "sucess_page.html"
-    },2000)
+function confirm_order(e){
+    e.preventDefault()
+
+    
+    let card_no = document.getElementById("card_no").value;
+    let cvv = document.getElementById("cvv").value;
+    
+    card_no = card_no.toString()
+    cvv = cvv.toString()
+    
+    if(card_no.length == 16 && cvv.length == 3){
+        setTimeout(function(){
+            location.href = "sucess_page.html"
+        },2000)
+    }
+    else{
+        alert(` Please enter proper 16 digit Card number and 3 digit CVV number  `)
+    }
     
 }

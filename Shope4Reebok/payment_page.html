@@ -451,30 +451,32 @@
 
         <div id="col2">
             <div class="form" id="form">
+              <form action="" onsubmit="confirm_order(event)">  
                 
                 <div class="row1"> 
                     <p id="card_formt"> Credit Card Number </p>
-                    <div>  <input type="number"/> </div> 
+                    <div>  <input id="card_no" required class="ipdc_no" type="number" placeholder="Enter 16 digit Card number" max="9999999999999999"/> </div> 
                 </div>
 
                 <div class="row1"> 
                     <p> Expiry </p>
-                    <div>  <input type="month"/> </div> 
+                    <div>  <input required type="month"/> </div> 
                 </div>
 
                 <div class="row1"> 
                     <p> CVV </p>
-                    <div>  <input type="number"/> </div> 
+                    <div>  <input id="cvv" required type="number"/> </div> 
                 </div>
 
                 <div class="row1"> 
                     <p> Name On Card </p>
-                    <div>  <input type="text"/> </div> 
+                    <div>  <input required type="text"/> </div> 
                 </div>
                 
-                <div class="btn" onclick="confirm_order()"> 
-                    Proceed
+                <div> 
+                    <input  class="btn" type="submit" value="Proceed"> 
                 </div>
+                </form>
             </div>
         </div>
     </div>
