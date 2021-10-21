@@ -1,4 +1,84 @@
-# shop4reebok
+# Clone of <a href = "shope4reebok.com">  Shoppe4Reebok</a>
+
+
+We Build clone of shope4reebok.com as a part of learning curve
+
+
+![Clone of shope4reebok.com](https://miro.medium.com/max/700/0*Lkq2qEDyJevOaByj.png)
+
+## Technologies Used :
+* HTML
+* CSS
+* JavaScript
+
+
+## Functional Things :
+* User Signup Page.
+* User Login Page.
+* Products Page.
+* All types of Sort/Filter Functionality.
+* Add to cart.
+* Multiple Images view on Hovering over images on Products page & Quick view Page.
+* Product Description 
+* Billing Address Page
+* Dummy Payment Method
+
+
+
+### Responsive Pages
+* Home Page
+* Cart Page
+* Billing Page
+
+
+## Getting Started :
+
+
+### Prerequisites 
+* VS Code
+
+
+### Installation 
+* Clone the repository
+    ``` 
+    git clone https://github.com/KeyurDiwan/shop4reebok
+    ```
+### Website Flow
+* Landing page is the Homepage of Website.
+
+    ![shope4reebok.com Home page](https://miro.medium.com/max/700/0*Lkq2qEDyJevOaByj.png)
+
+* Login Page/SignUp Page
+
+<!--     ![shope4reebok.com login page/signup page]() -->
+* Products Page
+
+    ![shope4reebok.com Products page](https://miro.medium.com/max/700/0*LIkdB4VWmwXTqTXF.png)
+
+* Cart Page
+
+  ![shope4reebok.com Cart page](https://miro.medium.com/max/700/0*9aeZTZO_KwtfHvKC.png)
+
+* Payments Page
+
+ ![shope4reebok.com Payment page](https://miro.medium.com/max/700/0*Jw884o4DTznRA4VR.png)
+
+## Contributors :
+* <a href = "https://github.com/PrasadBaviskar">Prashad Bavishkar</a>
+* <a href = "https://github.com/swati-kaithwas">Swati Kaithwas</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- # shop4reebok
   <h1> Clone of https://shop4reebok.com/</h1>
   <h1> Home Page </h1>
   <img src="https://miro.medium.com/max/2000/1*1Al0VsE3GOw-5aiNNBEFAw.png"  title="hover text">
@@ -13,3 +93,4 @@
      <h1> paymrnt page page </h1>
   <img src="https://miro.medium.com/max/1400/1*yDLi7UTkrUgRDnwNnJfznQ.png" alt="accessibility text">
 
+ -->
