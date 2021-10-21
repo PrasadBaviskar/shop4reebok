@@ -72,7 +72,7 @@ We Build clone of shope4reebok.com as a part of learning curve
  ![shope4reebok.com Payment page](https://miro.medium.com/max/700/0*Jw884o4DTznRA4VR.png)
 
 ## Contributors :
-* <a href = "https://github.com/PrasadBaviskar">Prashad Bavishkar</a>
+* <a href = "https://github.com/PrasadBaviskar">Prasad Baviskar</a>
 * <a href = "https://github.com/swati-kaithwas">Swati Kaithwas</a>
 
 
